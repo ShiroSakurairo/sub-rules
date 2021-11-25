@@ -1,0 +1,4 @@
+DOMAIN-KEYWORD,ookla
+DOMAIN-KEYWORD,speedtest
+DOMAIN-SUFFIX,fast.com
+PROCESS-NAME,org.zwanoo.android.speedtest

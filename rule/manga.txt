@@ -1,0 +1,12 @@
+DOMAIN-SUFFIX,manhuadb.com
+DOMAIN-SUFFIX,manhuaren.com
+DOMAIN-SUFFIX,manhuabei.com
+DOMAIN-SUFFIX,manhuagui.com
+DOMAIN-SUFFIX,cdndm5.com
+DOMAIN-SUFFIX,mangafunc.fun
+DOMAIN-SUFFIX,copymanga.com
+DOMAIN-SUFFIX,hamreus.com
+DOMAIN-SUFFIX,cdnmanhua.net
+IP-CIDR,61.174.50.99/32
+IP-CIDR,104.250.148.186/32
+IP-CIDR,104.20.180.50/32
