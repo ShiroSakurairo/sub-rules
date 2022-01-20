@@ -1,3 +1,2 @@
 DOMIN-SUFFIX,prts.wiki
-DOMIN-SUFFIX,jsdelivr.net
 DOMIN-KEYWORD,douyu
