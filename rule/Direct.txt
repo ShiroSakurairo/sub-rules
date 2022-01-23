@@ -1,2 +1,3 @@
-DOMIN-SUFFIX,prts.wiki
+DOMIN,prts.wiki
+DOMAIN,cdn.jsdelivr.net
 DOMIN-KEYWORD,douyu
