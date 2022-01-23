@@ -1,18 +1,18 @@
 [custom]
-custom_proxy_group=!!import:
+custom_proxy_group=!!import:https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/group.txt
 
 enable_rule_generator=true
 overwrite_original_rules=true
-surge_ruleset=!!import:
+surge_ruleset=!!import:https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/rulesets.txt
 
-clash_rule_base=
-surge_rule_base=
+clash_rule_base=https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/clash.txt
+surge_rule_base=https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/surge.txt
 
-rename=!!import:
+rename=!!import:https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/rename_node.txt
 
 add_emoji=true
 remove_old_emoji=true
-emoji=!!import:
+emoji=!!import:https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/rename_node.txt
 
-;include_remarks=
+;include_remarks=https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/emoji.txt
 exclude_remarks=(官网|产品|平台|回国|更新)
