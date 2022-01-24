@@ -1,2 +1,4 @@
 DOMAIN,prts.wiki
 DOMIN-KEYWORD,douyu
+DOMAIN-SUFFIX,fastgit.org
+DOMAIN-SUFFIX,jsdelivr.net
