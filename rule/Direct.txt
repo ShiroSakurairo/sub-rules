@@ -1,2 +1,2 @@
-DOMAIN-SUFFIX,prts.wiki
-DOMIN-KEYWORD,douyu
+DOMAIN,prts.wiki
+DOMAIN-SUFFIX,douyucdn.cn
