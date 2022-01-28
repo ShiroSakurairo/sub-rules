@@ -1,2 +1,3 @@
 DOMAIN,prts.wiki
 DOMAIN-SUFFIX,douyucdn.cn
+DOMAIN-SUFFIX,fastgit.org
