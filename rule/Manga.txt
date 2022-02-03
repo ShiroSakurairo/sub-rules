@@ -3,10 +3,7 @@ DOMAIN-SUFFIX,manhuaren.com
 DOMAIN-SUFFIX,manhuabei.com
 DOMAIN-SUFFIX,manhuagui.com
 DOMAIN-SUFFIX,cdndm5.com
-DOMAIN-SUFFIX,copymanga.com
 DOMAIN-SUFFIX,hamreus.com
 DOMAIN-SUFFIX,cdnmanhua.net
-DOMIN-KEYWORD,mangafun
-IP-CIDR,61.174.50.99/32
-IP-CIDR,104.250.148.186/32
-IP-CIDR,104.20.180.50/32
+DOMAIN-KEYWORD,copymanga
+DOMAIN-KEYWORD,mangafun
