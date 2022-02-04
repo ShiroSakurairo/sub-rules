@@ -1,5 +1,0 @@
-DOMAIN-SUFFIX,api.tsutsu.cc
-DOMAIN-SUFFIX,api2.tsutsu.cc
-DOMAIN-SUFFIX,api.wcc.best
-DOMAIN-SUFFIX,subcon.dlj.tf
-DOMAIN-SUFFIX,suo.tw
