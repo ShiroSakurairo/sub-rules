@@ -1,5 +1,5 @@
 DOMAIN-SUFFIX,adsdk.dmzj1.com
 DOMAIN,pica-pica.wikawika.xyz 
 DOMAIN,ad-channel.wikawika.xyz
-DOMAIN-SUFFIX,adinmo.com
-DOMAIN-SUFFIX,adrta.com
+DOMAIN-KEYWORD,adinmo
+DOMAIN-KEYWORD,adrta
