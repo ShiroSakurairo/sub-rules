@@ -6,4 +6,3 @@ DOMAIN-SUFFIX,photonengine.io
 DOMAIN-SUFFIX,exitgames.com
 DOMAIN-SUFFIX,adinmo.com
 DOMAIN-SUFFIX,adrta.com
-PROCESS-NAME,com.soulcastry.virtualdroid2
