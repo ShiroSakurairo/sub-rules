@@ -2,4 +2,3 @@ DOMAIN-SUFFIX,prts.wiki
 DOMAIN-SUFFIX,fastgit.org
 DOMAIN-KEYWORD,douyucdn
 DOMAIN-SUFFIX,ktplay.com
-DOMAIN-SUFFIX,adinmo.com
