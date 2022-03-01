@@ -3,3 +3,7 @@ DOMAIN-SUFFIX,fastgit.org
 DOMAIN-KEYWORD,douyucdn
 DOMAIN-SUFFIX,ktplay.com
 DOMAIN-SUFFIX,photonengine.io
+DOMAIN-SUFFIX,exitgames.com
+DOMAIN-SUFFIX,adinmo.com
+DOMAIN-SUFFIX,adrta.com
+PROCESS-NAME,com.soulcastry.virtualdroid2
