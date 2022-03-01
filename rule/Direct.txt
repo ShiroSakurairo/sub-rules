@@ -9,3 +9,4 @@ DOMAIN-SUFFIX,exitgames.com
 DOMAIN-SUFFIX,adinmo.com
 DOMAIN-SUFFIX,adrta.com
 DOMAIN-SUFFIX,playfabapi.com
+IP-CIDR,92.38.154.5/24
