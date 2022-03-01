@@ -1,2 +1,6 @@
 DOMAIN-SUFFIX,haitenjp.com
 DOMAIN-SUFFIX,cgpacking.com
+
+;Virtual Droid
+DOMAIN-SUFFIX,adinmo.com
+DOMAIN-SUFFIX,adrta.com
