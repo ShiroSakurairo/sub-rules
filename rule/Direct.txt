@@ -1,8 +1,11 @@
 DOMAIN-SUFFIX,prts.wiki
 DOMAIN-SUFFIX,fastgit.org
 DOMAIN-KEYWORD,douyucdn
+
+;Virtual Droid
 DOMAIN-SUFFIX,ktplay.com
 DOMAIN-SUFFIX,photonengine.io
 DOMAIN-SUFFIX,exitgames.com
 DOMAIN-SUFFIX,adinmo.com
 DOMAIN-SUFFIX,adrta.com
+DOMAIN-SUFFIX,playfabapi.com
