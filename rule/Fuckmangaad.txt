@@ -3,3 +3,4 @@ DOMAIN,pica-pica.wikawika.xyz
 DOMAIN,ad-channel.wikawika.xyz
 DOMAIN-SUFFIX,adinmo.com
 DOMAIN-SUFFIX,adrta.com
+DOMAIN-SUFFIX,graph.facebook.com
