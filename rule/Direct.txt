@@ -8,6 +8,7 @@ DOMAIN-SUFFIX,photonengine.io
 DOMAIN-SUFFIX,exitgames.com
 DOMAIN-SUFFIX,playfabapi.com
 DOMAIN-SUFFIX,adrta.com
+DOMAIN-SUFFIX,gvt1.com
 DOMAIN-SUFFIX,doubleclick.net
 DOMAIN-SUFFIX,googlesyndication.com
 IP-CIDR,92.38.154.0/24
