@@ -1,0 +1,29 @@
+🍀 Proxy`select`❄️ IPLC`[]💜 RELAY`[]🌸 JP|SC`[]🌹 HK|SC`[]🌙 SG|SC`[]🐆 US|SC`[]🍮 Line`[]🎀 Direct
+🐺 Pixiv`select`[]🍀 Proxy`❄️ IPLC`[]💜 RELAY`[]🌸 JP|SC`[]🌹 HK|SC`[]🌙 SG|SC`[]🐆 US|SC`[]🍮 Line
+🍎 Twitter`select`[]🍀 Proxy`❄️ IPLC`[]💜 RELAY`[]🌸 JP|SC`[]🌹 HK|SC`[]🌙 SG|SC`[]🐆 US|SC`[]🍮 Line
+💤 Manga`select`[]🍀 Proxy`❄️ IPLC`[]💜 RELAY`[]🌸 JP|SC`[]🌹 HK|SC`[]🌙 SG|SC`[]🐆 US|SC`[]🍃 TW|SC`[]🎀 Direct`[]🍮 Line
+🌱 Ecchi`select`[]🍀 Proxy`❄️ IPLC`[]💜 RELAY`[]🌸 JP|SC`[]🌹 HK|SC`[]🌙 SG|SC`[]🐆 US|SC`[]🍃 TW|SC`[]🎀 Direct`[]🍮 Line
+🐈 Telegram`select`[]🍀 Proxy`❄️ IPLC`[]💜 RELAY`[]🌸 JP|SC`[]🌹 HK|SC`[]🌙 SG|SC`[]🐆 US|SC`[]🍮 Line
+☕ Globalmedia`select`[]🍀 Proxy`❄️ IPLC`[]💜 RELAY`[]🌸 JP|SC`[]🌹 HK|SC`[]🌙 SG|SC`[]🐆 US|SC`[]🍮 Line
+💧 Domestic`select`[]🎀 Direct`[]🍀 Proxy`[]🎼 Reject`[]🍮 Line
+🔔 Other`select`[]🍀 Proxy`[]🎀 Direct`[]🎼 Reject`[]🍮 Line
+;❄️ IPLC`select`🐾 IPLC|TS`🐶 IPLC|HK|TS`🎈 IPLC|SG|TS`PC\|A`PC\|B`PC\|C`PC\|D`PC\|E`PC\|F`PC\|G`PC\|H`PC\|I`PC\|J`PC\|K`PC\|L`PC\|M`PC\|N`PC\|O`PC\|P`PC\|Q`PC\|R`PC\|S`PC\|T`PC\|U`PC\|V`PC\|W`PC\|X`PC\|Y`PC\|Z
+💜 RELAY`select`🐥 RELAY|TS`[]🍥 RELAY|JP|TS`[]🍯 RELAY|HK|TS`[]🐱 RELAY|SG|TS`[]🕊️ RELAY|US|TS`EX`RE\|A`RE\|B`RE\|C`RE\|D`RE\|E`RE\|F`RE\|G`RE\|H`RE\|I`RE\|J`RE\|K`RE\|L`RE\|M`RE\|N`RE\|O`RE\|P`RE\|Q`RE\|R`RE\|S`RE\|T`RE\|U`RE\|V`RE\|W`RE\|X`RE\|Y`RE\|Z
+🍮 Line`select`[]🎀 Direct`[]🎼 Reject`D:`T:`❄️ IPLC`[]💜 RELAY`[]🌸 JP|SC`[]🌹 HK|SC`[]🌙 SG|SC`[]🐆 US|SC`EX`PC\|A`PC\|B`PC\|C`PC\|D`PC\|E`PC\|F`PC\|G`PC\|H`PC\|I`PC\|J`PC\|K`PC\|L`PC\|M`PC\|N`PC\|O`PC\|P`PC\|Q`PC\|R`PC\|S`PC\|T`PC\|U`PC\|V`PC\|W`PC\|X`PC\|Y`PC\|Z`RE\|A`RE\|B`RE\|C`RE\|D`RE\|E`RE\|F`RE\|G`RE\|H`RE\|I`RE\|J`RE\|K`RE\|L`RE\|M`RE\|N`RE\|O`RE\|P`RE\|Q`RE\|R`RE\|S`RE\|T`RE\|U`RE\|V`RE\|W`RE\|X`RE\|Y`RE\|Z
+🌸 JP|SC`select`[]🍥 RELAY|JP|TS`(.*JP)
+🌹 HK|SC`select`[]🍯 RELAY|HK|TS`(.*HK)
+🌙 SG|SC`select`[]🐱 RELAY|SG|TS`(.*SG)
+🐆 US|SC`select`[]🕊️ RELAY|US|TS`(.*US)
+🍃 TW|SC`select`[]🎨 RELAY|TW|TS`(.*TW)
+;🐾 IPLC|TS`url-test`PC(.*JP\|)(?!00[#])`url-test`PC(.*HK\|)(?!00[#])`url-test`PC(.*SG\|)(?!00[#])`http://www.gstatic.com/generate_204`300,,50
+;❤️ IPLC|JP|TS`url-test`PC(.*JP\|)(?!00[#])`http://www.gstatic.com/generate_204`300,,50
+;🐶 IPLC|HK|TS`url-test`PC(.*HK\|)(?!00[#])`http://www.gstatic.com/generate_204`300,,50
+;🎈 IPLC|SG|TS`url-test`PC(.*SG\|)(?!00[#])`http://www.gstatic.com/generate_204`300,,50
+;🐥 RELAY|TS`url-test`RE(.*JP\|)(?!00[#])(.*1x)`RE(.*HK\|)(?!00[#])(.*1x)`RE(.*SG\|)(?!00[#])(.*1x)`RE(.*US\|)(?!00[#])(.*1x)`RE(.*TW\|)(?!00[#])(.*1x)`http://www.gstatic.com/generate_204`300,,50
+🍥 RELAY|JP|TS`url-test`RE(.*JP\|)(?!00[#])(.*1x)`http://www.gstatic.com/generate_204`300,,50
+🍯 RELAY|HK|TS`url-test`RE(.*HK\|)(?!00[#])(.*1x)`http://www.gstatic.com/generate_204`300,,50
+🐱 RELAY|SG|TS`url-test`RE(.*SG\|)(?!00[#])(.*1x)`http://www.gstatic.com/generate_204`300,,50
+🕊️ RELAY|US|TS`url-test`RE(.*US\|)(?!00[#])(.*1x)`http://www.gstatic.com/generate_204`300,,50
+🎨 RELAY|TW|TS`url-test`RE(.*TW\|)(?!00[#])(.*1x)`http://www.gstatic.com/generate_204`300,,50
+🎀 Direct`select`[]DIRECT
+🎼 Reject`select`[]REJECT
