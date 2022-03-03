@@ -7,6 +7,7 @@ DOMAIN-SUFFIX,ktplay.com
 DOMAIN-SUFFIX,photonengine.io
 DOMAIN-SUFFIX,exitgames.com
 DOMAIN-SUFFIX,playfabapi.com
+DOMAIN-SUFFIX,adrta.com
 DOMAIN-SUFFIX,graph.facebook.com
 DOMAIN-SUFFIX,gvt1.com
 DOMAIN-SUFFIX,doubleclick.net
