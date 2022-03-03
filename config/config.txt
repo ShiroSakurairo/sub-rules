@@ -41,18 +41,18 @@ surge_ruleset=🐺 Pixiv,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule
 surge_ruleset=🍎 Twitter,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Twitter.txt
 surge_ruleset=💤 Manga,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Manga.txt
 surge_ruleset=🌱 Ecchi,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Ecchi.txt
-surge_ruleset=🐈 Telegram,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Extra/Telegram/Telegram.list
-surge_ruleset=☕ Globalmedia,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/StreamingMedia/Streaming.list
-surge_ruleset=🍀 Proxy,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Global.list
+surge_ruleset=🐈 Telegram,https://raw.fastgit.org/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Telegram/Telegram.list
+surge_ruleset=☕ Globalmedia,https://raw.fastgit.org/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Streaming.list
+surge_ruleset=🍀 Proxy,https://raw.fastgit.org/DivineEngine/Profiles/master/Surge/Ruleset/Global.list
 surge_ruleset=🍀 Proxy,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Fucktaptap.txt
-surge_ruleset=💧 Domestic,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/China.list
-surge_ruleset=💧 Domestic,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Extra/ChinaIP.list
+surge_ruleset=💧 Domestic,https://raw.fastgit.org/DivineEngine/Profiles/master/Surge/Ruleset/China.list
+surge_ruleset=💧 Domestic,https://raw.fastgit.org/DivineEngine/Profiles/master/Surge/Ruleset/Extra/ChinaIP.list
 surge_ruleset=💧 Domestic,[]GEOIP,CN
 surge_ruleset=🔔 Other,[]MATCH
 
-clash_rule_base=https://gitlab.com/ShiroSakurairo/susuki/-/raw/master/subconverter/susuki/clash.txt
-surge_rule_base=https://gitlab.com/ShiroSakurairo/susuki/-/raw/master/subconverter/susuki/surge.txt
-surfboard_rule_base=https://gitlab.com/ShiroSakurairo/susuki/-/raw/master/subconverter/susuki/surge.txt
+clash_rule_base=https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/clash.txt
+surge_rule_base=https://gitlab.com/ShiroSakurairo/susuki/-/raw/main/config/surge.txt
+surfboard_rule_base=https://gitlab.com/ShiroSakurairo/susuki/-/raw/main/config/surge.txt
 
 rename=剩余流量：(.*$)@D:$1
 rename=过期时间：.*([0-9]{2})-(.*)-(.*)@T:$1/$2/$3
