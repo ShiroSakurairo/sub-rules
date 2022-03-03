@@ -7,4 +7,5 @@ DOMAIN-SUFFIX,ktplay.com
 DOMAIN-SUFFIX,photonengine.io
 DOMAIN-SUFFIX,exitgames.com
 DOMAIN-SUFFIX,playfabapi.com
+DOMAIN-SUFFIX,adrta.com
 IP-CIDR,92.38.154.0/24
