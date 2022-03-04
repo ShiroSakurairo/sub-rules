@@ -4,8 +4,8 @@ DOMAIN-KEYWORD,douyucdn
 
 ;Virtual Droid
 DOMAIN-SUFFIX,ktplay.com
-;DOMAIN-SUFFIX,photonengine.io
-;DOMAIN-SUFFIX,exitgames.com
+DOMAIN-SUFFIX,photonengine.io
+DOMAIN-SUFFIX,exitgames.com
 DOMAIN-SUFFIX,adrta.com
 DOMAIN-SUFFIX,adinmo.com
 IP-CIDR,92.38.154.0/24
