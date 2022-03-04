@@ -9,7 +9,7 @@ custom_proxy_group=☕ Globalmedia`select`[]🍀 Proxy`❄️ IPLC`[]💜 RELAY`
 custom_proxy_group=💧 Domestic`select`[]🎀 Direct`[]🍀 Proxy`[]🎼 Reject`[]🍮 Line
 custom_proxy_group=🔔 Other`select`[]🍀 Proxy`[]🎀 Direct`[]🎼 Reject`[]🍮 Line
 ;custom_proxy_group=;❄️ IPLC`select`🐾 IPLC|TS`🐶 IPLC|HK|TS`🎈 IPLC|SG|TS`PC\|A`PC\|B`PC\|C`PC\|D`PC\|E`PC\|F`PC\|G`PC\|H`PC\|I`PC\|J`PC\|K`PC\|L`PC\|M`PC\|N`PC\|O`PC\|P`PC\|Q`PC\|R`PC\|S`PC\|T`PC\|U`PC\|V`PC\|W`PC\|X`PC\|Y`PC\|Z
-custom_proxy_group=💜 RELAY`select`🐥 RELAY|TS`[]🍥 RELAY|JP|TS`[]🍯 RELAY|HK|TS`[]🐱 RELAY|SG|TS`[]🕊️ RELAY|US|TS`EX`RE\|A`RE\|B`RE\|C`RE\|D`RE\|E`RE\|F`RE\|G`RE\|H`RE\|I`RE\|J`RE\|K`RE\|L`RE\|M`RE\|N`RE\|O`RE\|P`RE\|Q`RE\|R`RE\|S`RE\|T`RE\|U`RE\|V`RE\|W`RE\|X`RE\|Y`RE\|Z`V0.*
+custom_proxy_group=💜 RELAY`select`🐥 RELAY|TS`[]🍥 RELAY|JP|TS`[]🍯 RELAY|HK|TS`[]🐱 RELAY|SG|TS`[]🕊️ RELAY|US|TS`EX`.*`RE\|A`RE\|B`RE\|C`RE\|D`RE\|E`RE\|F`RE\|G`RE\|H`RE\|I`RE\|J`RE\|K`RE\|L`RE\|M`RE\|N`RE\|O`RE\|P`RE\|Q`RE\|R`RE\|S`RE\|T`RE\|U`RE\|V`RE\|W`RE\|X`RE\|Y`RE\|Z
 custom_proxy_group=🍮 Line`select`[]🎀 Direct`[]🎼 Reject`D:`T:`❄️ IPLC`[]💜 RELAY`[]🌸 JP|SC`[]🌹 HK|SC`[]🌙 SG|SC`[]🐆 US|SC`EX`PC\|A`PC\|B`PC\|C`PC\|D`PC\|E`PC\|F`PC\|G`PC\|H`PC\|I`PC\|J`PC\|K`PC\|L`PC\|M`PC\|N`PC\|O`PC\|P`PC\|Q`PC\|R`PC\|S`PC\|T`PC\|U`PC\|V`PC\|W`PC\|X`PC\|Y`PC\|Z`RE\|A`RE\|B`RE\|C`RE\|D`RE\|E`RE\|F`RE\|G`RE\|H`RE\|I`RE\|J`RE\|K`RE\|L`RE\|M`RE\|N`RE\|O`RE\|P`RE\|Q`RE\|R`RE\|S`RE\|T`RE\|U`RE\|V`RE\|W`RE\|X`RE\|Y`RE\|Z
 custom_proxy_group=🌸 JP|SC`select`[]🍥 RELAY|JP|TS`(.*JP)
 custom_proxy_group=🌹 HK|SC`select`[]🍯 RELAY|HK|TS`(.*HK)
@@ -51,8 +51,8 @@ surge_ruleset=💧 Domestic,[]GEOIP,CN
 surge_ruleset=🔔 Other,[]MATCH
 
 clash_rule_base=https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/clash.txt
-surge_rule_base=https://gitlab.com/ShiroSakurairo/susuki/-/raw/main/config/surge.txt
-surfboard_rule_base=https://gitlab.com/ShiroSakurairo/susuki/-/raw/main/config/surge.txt
+surge_rule_base=https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/surge.txt
+surfboard_rule_base=https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/surge.txt
 
 rename=剩余流量：(.*$)@D:$1
 rename=过期时间：.*([0-9]{2})-(.*)-(.*)@T:$1/$2/$3
