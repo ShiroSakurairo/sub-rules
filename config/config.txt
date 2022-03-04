@@ -41,12 +41,12 @@ surge_ruleset=🐺 Pixiv,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule
 surge_ruleset=🍎 Twitter,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Twitter.txt
 surge_ruleset=💤 Manga,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Manga.txt
 surge_ruleset=🌱 Ecchi,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Ecchi.txt
-surge_ruleset=🐈 Telegram,https://raw.fastgit.org/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Telegram/Telegram.list
-surge_ruleset=☕ Globalmedia,https://raw.fastgit.org/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Streaming.list
-surge_ruleset=🍀 Proxy,https://raw.fastgit.org/DivineEngine/Profiles/master/Surge/Ruleset/Global.list
+surge_ruleset=🐈 Telegram,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Telegram/Telegram.list
+surge_ruleset=☕ Globalmedia,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Streaming.list
+surge_ruleset=🍀 Proxy,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Global.list
 surge_ruleset=🍀 Proxy,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Fucktaptap.txt
-surge_ruleset=💧 Domestic,https://raw.fastgit.org/DivineEngine/Profiles/master/Surge/Ruleset/China.list
-surge_ruleset=💧 Domestic,https://raw.fastgit.org/DivineEngine/Profiles/master/Surge/Ruleset/Extra/ChinaIP.list
+surge_ruleset=💧 Domestic,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/China.list
+surge_ruleset=💧 Domestic,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/ChinaIP.list
 surge_ruleset=💧 Domestic,[]GEOIP,CN
 surge_ruleset=🔔 Other,[]MATCH
 
