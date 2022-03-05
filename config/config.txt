@@ -45,6 +45,8 @@ ruleset=☕ Globalmedia,https://raw.fastgit.org/DivineEngine/Profiles/master/Sur
 ruleset=🍀 Proxy,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Speedtest.txt
 ruleset=🍀 Proxy,https://raw.fastgit.org/DivineEngine/Profiles/master/Surge/Ruleset/Global.list
 ruleset=🍀 Proxy,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Fucktaptap.txt
+ruleset=💧 Domestic,https://raw.fastgit.org/DivineEngine/Profiles/master/Surge/Ruleset/China.list
+ruleset=💧 Domestic,https://raw.fastgit.org/DivineEngine/Profiles/master/Surge/Ruleset/Extra/ChinaIP.list
 ruleset=💧 Domestic,[]GEOIP,CN
 ruleset=🔔 Other,[]MATCH
 
