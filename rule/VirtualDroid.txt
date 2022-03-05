@@ -1,2 +1,0 @@
-DOMAIN-SUFFIX,photonengine.io
-DOMAIN-SUFFIX,exitgames.com
