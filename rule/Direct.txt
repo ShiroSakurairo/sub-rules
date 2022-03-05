@@ -7,6 +7,7 @@ DOMAIN-SUFFIX,ktplay.com
 IP-CIDR,92.38.154.0/32
 DOMAIN-SUFFIX,photonengine.io
 DOMAIN-SUFFIX,exitgames.com
+DOMAIN-SUFFIX,playfabapi.com
 DOMAIN-SUFFIX,googlesyndication.com
 DOMAIN-SUFFIX,googleads.g.doubleclick.net
-DOMAIN-SUFFIX,rr2---sn-bvn0o-m01l.gvt1.com
+;DOMAIN-SUFFIX,rr2---sn-bvn0o-m01l.gvt1.com
