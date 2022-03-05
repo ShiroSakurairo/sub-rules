@@ -9,6 +9,5 @@ DOMAIN-SUFFIX,ktplay.com
 ;DOMAIN-SUFFIX,adrta.com
 ;DOMAIN-SUFFIX,adinmo.com
 DOMAIN-SUFFIX,92.38.154.0
-db42.playfabapi.com:443
 ;DOMAIN-SUFFIX,doubleclick.net
 ;DOMAIN-SUFFIX,googlesyndication.com
