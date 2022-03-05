@@ -42,7 +42,6 @@ ruleset=💤 Manga,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Manga
 ruleset=🌱 Ecchi,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Ecchi.txt
 ruleset=🐈 Telegram,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Extra/Telegram/Telegram.list
 ruleset=☕ Globalmedia,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/StreamingMedia/Streaming.list
-ruleset=🍀 Proxy,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/VirtualDroid.txt
 ruleset=🍀 Proxy,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Speedtest.txt
 ruleset=🍀 Proxy,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Global.list
 ruleset=🍀 Proxy,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Fucktaptap.txt

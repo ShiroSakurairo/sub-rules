@@ -5,8 +5,7 @@ DOMAIN-KEYWORD,douyucdn
 ;Virtual Droid
 DOMAIN-SUFFIX,ktplay.com
 DOMAIN-SUFFIX,92.38.154.0
-;DOMAIN-SUFFIX,photonengine.io
-;DOMAIN-SUFFIX,exitgames.com
-;DOMAIN-SUFFIX,adrta.com
-;DOMAIN-SUFFIX,doubleclick.net
-;DOMAIN-SUFFIX,googlesyndication.com
+DOMAIN-SUFFIX,photonengine.io
+DOMAIN-SUFFIX,exitgames.com
+DOMAIN-SUFFIX,googlesyndication.com
+DOMAIN-SUFFIX,googleads.g.doubleclick.net
