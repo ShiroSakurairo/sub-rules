@@ -5,8 +5,7 @@ DOMAIN-SUFFIX,v1.mk
 
 ;Virtual Droid
 DOMAIN-SUFFIX,ktplay.com
-IP-CIDR,92.38.154.5/32
-IP-CIDR,92.38.154.22/32
+IP-CIDR,92.38.154.0/24
 DOMAIN-SUFFIX,photonengine.io
 DOMAIN-SUFFIX,exitgames.com
 DOMAIN-SUFFIX,adinmo.com
