@@ -1,6 +1,7 @@
 DOMAIN-SUFFIX,prts.wiki
 DOMAIN-SUFFIX,fastgit.org
 DOMAIN-KEYWORD,douyucdn
+DOMAIN-SUFFIX,v1.mk
 
 ;Virtual Droid
 DOMAIN-SUFFIX,ktplay.com
