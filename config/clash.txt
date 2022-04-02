@@ -2,4 +2,3 @@ mixed-port: 0
 allow-lan: false
 mode: rule
 log-level: info
-ipv6: false
