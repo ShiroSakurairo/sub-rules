@@ -2,6 +2,8 @@ DOMAIN-SUFFIX,prts.wiki
 DOMAIN-SUFFIX,fastgit.org
 DOMAIN-KEYWORD,douyucdn
 DOMAIN-SUFFIX,v1.mk
+PROCESS-NAME,com.github.kr328.clash
+PROCESS-NAME,com.getsurfboard
 
 ;Virtual Droid
 DOMAIN-SUFFIX,ktplay.com
