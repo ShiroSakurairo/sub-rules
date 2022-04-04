@@ -3,10 +3,3 @@ allow-lan: false
 mode: rule
 log-level: info
 ipv6: false
-dns:
-  enable: true
-  ipv6: false
-  listen: 0.0.0.0:1053
-  enhanced-mode: fake-ip
-  nameserver:
-    - https://dns.alidns.com/dns-query
