@@ -1,6 +1,6 @@
 [General]
-dns-server = 223.5.5.5, 119.29.29.29
+dns-server = 119.29.29.29, 180.76.76.76
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
 always-real-ip = lens.l.google.com
-http-listen = 0.0.0.0:6152
-socks5-listen = 0.0.0.0:6153
+;http-listen = 0.0.0.0:6152
+;socks5-listen = 0.0.0.0:6153
