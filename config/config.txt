@@ -42,8 +42,8 @@ ruleset=🔔 Other,[]MATCH
 clash_rule_base=https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/clash.txt
 surge_rule_base=https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/surge.txt
 
-rename=剩余流量：(.*$)@N:$1
-rename=过期时间：.*([0-9]{2})-(.*)-(.*)@T:$1/$2/$3
+rename=剩余流量：(.*$)@Data:$1
+rename=过期时间：.*([0-9]{2})-(.*)-(.*)@Time:$1/$2/$3
 rename=专线(?![A-Z])@PC
 rename=中继(?![A-Z])|中转|隧道@RE
 rename=冷门-@
@@ -137,7 +137,7 @@ emoji=LU,🍸
 emoji=UA,🍰
 emoji=AT,🧁
 emoji=EX,🍩
-emoji=N:,❄️
-emoji=T:,🍭
+emoji=Data:,❄️
+emoji=Time:,🍭
 
 exclude_remarks=(官网|产品|平台|回国|更新)
