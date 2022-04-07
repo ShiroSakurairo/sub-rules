@@ -3,4 +3,3 @@ allow-lan: false
 mode: rule
 log-level: info
 ipv6: false
-external-controller: 127.0.0.1:9090
