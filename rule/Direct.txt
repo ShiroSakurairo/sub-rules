@@ -1,6 +1,5 @@
 DOMAIN-SUFFIX,prts.wiki
 DOMAIN-SUFFIX,fastgit.org
-DOMAIN-SUFFIX,jsdelivr.net
 DOMAIN-KEYWORD,douyucdn
 DOMAIN-SUFFIX,v1.mk
 
