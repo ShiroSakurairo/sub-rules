@@ -8,8 +8,10 @@ surge_rule_base = "https://gitlab.com/ShiroSakurairo/subrule/raw/main/config/all
 
 add_emoji = true
 remove_old_emoji = true
+import = "https://gitlab.com/ShiroSakurairo/subrule/raw/main/config/emoji.toml"
 
-exclude_remarks = []
+[[rename_node]]
+import = "https://gitlab.com/ShiroSakurairo/subrule/raw/main/config/rename_node.toml"
 
 [[custom_groups]]
 import = "https://gitlab.com/ShiroSakurairo/subrule/raw/main/config/groups.toml"
