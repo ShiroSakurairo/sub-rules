@@ -4,7 +4,6 @@ mixed-port: 7890
 allow-lan: false
 mode: rule
 log-level: info
-external-controller: 0.0.0.0:9090
 ipv6: false
 proxies: ~
 proxy-groups: ~
