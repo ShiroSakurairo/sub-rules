@@ -19,22 +19,22 @@ dns:
 proxies: ~
 proxy-groups: ~
 rule-providers: 
-  Direct: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/yaml/Direct.yaml, path: ./Ruleset/Direct.yaml, interval: 86400 }
-  Localareanetwork: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/yaml/Localareanetwork.yaml, path: ./Ruleset/Localareanetwork.yaml, interval: 86400 }
-  Fuckfalun: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/yaml/Fuckfalun.yaml, path: ./Ruleset/Fuckfalun.yaml, interval: 86400 }
-  Fuckmangaad: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/yaml/Fuckmangaad.yaml, path: ./Ruleset/Fuckmangaad.yaml, interval: 86400 }
-  Fuckscam: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/yaml/Fuckscam.yaml, path: ./Ruleset/Fuckscam.yaml, interval: 86400 }
-  Pixiv: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/yaml/Pixiv.yaml, path: ./Ruleset/Pixiv.yaml, interval: 86400 }
-  Twitter: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/yaml/Twitter.yaml, path: ./Ruleset/Twitter.yaml, interval: 86400 }
-  Manga: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/yaml/Manga.yaml, path: ./Ruleset/Manga.yaml, interval: 86400 }
-  Ecchi: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/yaml/Ecchi.yaml, path: ./Ruleset/Ecchi.yaml, interval: 86400 }
-  Telegram: { type: http, behavior: classical, url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/Extra/Telegram/Telegram.yaml, path: ./Ruleset/Telegram.yaml, interval: 86400 }
-  Streaming: { type: http, behavior: classical, url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/StreamingMedia/Streaming.yaml, path: ./Ruleset/Streaming.yaml, interval: 86400 }
-  Speedtest: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/yaml/Speedtest.yaml, path: ./Ruleset/Speedtest.yaml, interval: 86400 }
-  Global: { type: http, behavior: classical, url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/Global.yaml, path: ./Ruleset/Global.yaml, interval: 86400 }
-  Fucktaptap: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/yaml/Fucktaptap.yaml, path: ./Ruleset/Fucktaptap.yaml, interval: 86400 }
-  China: { type: http, behavior: classical, url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/China.yaml, path: ./Ruleset/China.yaml, interval: 86400 }
-  ChinaIP: { type: http, behavior: ipcidr, url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/Extra/ChinaIP.yaml, path: ./Ruleset/ChinaIP.yaml, interval: 86400 }
+  Direct: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/raw/main/ruleset/clash/Direct.yaml, path: ./ruleset/Direct.yaml, interval: 86400 }
+  Localareanetwork: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/raw/main/ruleset/clash/Localareanetwork.yaml, path: ./ruleset/Localareanetwork.yaml, interval: 86400 }
+  Fuckfalun: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/raw/main/ruleset/clash/Fuckfalun.yaml, path: ./ruleset/Fuckfalun.yaml, interval: 86400 }
+  Fuckmangaad: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/raw/main/ruleset/clash/Fuckmangaad.yaml, path: ./ruleset/Fuckmangaad.yaml, interval: 86400 }
+  Fuckscam: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/raw/main/ruleset/clash/Fuckscam.yaml, path: ./ruleset/Fuckscam.yaml, interval: 86400 }
+  Pixiv: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/raw/main/ruleset/clash/Pixiv.yaml, path: ./ruleset/Pixiv.yaml, interval: 86400 }
+  Twitter: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/raw/main/ruleset/clash/Twitter.yaml, path: ./ruleset/Twitter.yaml, interval: 86400 }
+  Manga: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/raw/main/ruleset/clash/Manga.yaml, path: ./ruleset/Manga.yaml, interval: 86400 }
+  Ecchi: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/raw/main/ruleset/clash/Ecchi.yaml, path: ./ruleset/Ecchi.yaml, interval: 86400 }
+  Telegram: { type: http, behavior: classical, url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/Extra/Telegram/Telegram.yaml, path: ./ruleset/Telegram.yaml, interval: 86400 }
+  Streaming: { type: http, behavior: classical, url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/StreamingMedia/Streaming.yaml, path: ./ruleset/Streaming.yaml, interval: 86400 }
+  Speedtest: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/raw/main/ruleset/clash/Speedtest.yaml, path: ./ruleset/Speedtest.yaml, interval: 86400 }
+  Global: { type: http, behavior: classical, url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/Global.yaml, path: ./ruleset/Global.yaml, interval: 86400 }
+  Fucktaptap: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/raw/main/ruleset/clash/Fucktaptap.yaml, path: ./ruleset/Fucktaptap.yaml, interval: 86400 }
+  China: { type: http, behavior: classical, url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/China.yaml, path: ./ruleset/China.yaml, interval: 86400 }
+  ChinaIP: { type: http, behavior: ipcidr, url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/Extra/ChinaIP.yaml, path: ./ruleset/ChinaIP.yaml, interval: 86400 }
 rules:
   - RULE-SET,Direct,🎀 Direct
   - RULE-SET,Localareanetwork,🎀 Direct
@@ -71,20 +71,20 @@ socks5-listen = 0.0.0.0:6153
 [Proxy Group]
 ~
 [Rule]
-RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Direct.list,🎀 Direct,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Localareanetwork.list,🎀 Direct,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Fuckfalun.list,🎼 Reject,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Fuckmangaad.list,🎼 Reject,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Fuckscam.list,🎼 Reject,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Pixiv.list,🐺 Pixiv,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Twitter.list,🍎 Twitter,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Manga.list,💤 Manga,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Ecchi.list,🌱 Ecchi,update-interval=86400
+RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/ruleset/surge/Direct.list,🎀 Direct,update-interval=86400
+RULE-SET,https://gitlab.com/ShiroSakurairo/subruleraw/main/ruleset/surge/Localareanetwork.list,🎀 Direct,update-interval=86400
+RULE-SET,https://gitlab.com/ShiroSakurairo/subruleraw/main/ruleset/surge/Fuckfalun.list,🎼 Reject,update-interval=86400
+RULE-SET,https://gitlab.com/ShiroSakurairo/subruleraw/main/ruleset/surge/Fuckmangaad.list,🎼 Reject,update-interval=86400
+RULE-SET,https://gitlab.com/ShiroSakurairo/subruleraw/main/ruleset/surge/Fuckscam.list,🎼 Reject,update-interval=86400
+RULE-SET,https://gitlab.com/ShiroSakurairo/subruleraw/main/ruleset/surge/Pixiv.list,🐺 Pixiv,update-interval=86400
+RULE-SET,https://gitlab.com/ShiroSakurairo/subruleraw/main/ruleset/surge/Twitter.list,🍎 Twitter,update-interval=86400
+RULE-SET,https://gitlab.com/ShiroSakurairo/subruleraw/main/ruleset/surge/Manga.list,💤 Manga,update-interval=86400
+RULE-SET,https://gitlab.com/ShiroSakurairo/subruleraw/main/ruleset/surge/Ecchi.list,🌱 Ecchi,update-interval=86400
 RULE-SET,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Extra/Telegram/Telegram.list,🐈 Telegram,update-interval=86400
 RULE-SET,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/StreamingMedia/Streaming.list,☕ Globalmedia,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Speedtest.list,🍀 Proxy,update-interval=86400
+RULE-SET,https://gitlab.com/ShiroSakurairo/subruleraw/main/ruleset/surge/Speedtest.list,🍀 Proxy,update-interval=86400
 RULE-SET,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Global.list,🍀 Proxy,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Fucktaptap.list,🍀 Proxy,update-interval=86400
+RULE-SET,https://gitlab.com/ShiroSakurairo/subruleraw/main/ruleset/surge/Fucktaptap.list,🍀 Proxy,update-interval=86400
 RULE-SET,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/China.list,💧 Domestic,update-interval=86400
 RULE-SET,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Extra/ChinaIP.list,💧 Domestic,update-interval=86400
 GEOIP,CN,💧 Domestic
