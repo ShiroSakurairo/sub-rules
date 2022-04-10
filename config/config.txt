@@ -18,8 +18,8 @@ custom_proxy_group=🍃 TW|SC`select`🎨 RELAY|TW|TS`(.*TW)
 custom_proxy_group=🎀 Direct`select`[]DIRECT
 custom_proxy_group=🎼 Reject`select`[]REJECT
 
-enable_rule_generator=true
-overwrite_original_rules=true
+enable_rule_generator=false
+overwrite_original_rules=false
 ruleset=🎀 Direct,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Direct.txt
 ruleset=🎀 Direct,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Localareanetwork.txt
 ruleset=🎼 Reject,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Fuckfalun.txt
@@ -29,18 +29,18 @@ ruleset=🐺 Pixiv,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Pixiv
 ruleset=🍎 Twitter,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Twitter.txt
 ruleset=💤 Manga,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Manga.txt
 ruleset=🌱 Ecchi,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Ecchi.txt
-ruleset=🐈 Telegram,https://https://github.com/DivineEngine/Profiles/raw/master/Surge/Ruleset/Extra/Telegram/Telegram.list
-ruleset=☕ Globalmedia,https://https://github.com/DivineEngine/Profiles/raw/master/Surge/Ruleset/StreamingMedia/Streaming.list
+ruleset=🐈 Telegram,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Extra/Telegram/Telegram.list
+ruleset=☕ Globalmedia,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/StreamingMedia/Streaming.list
 ruleset=🍀 Proxy,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Speedtest.txt
-ruleset=🍀 Proxy,https://https://github.com/DivineEngine/Profiles/raw/master/Surge/Ruleset/Global.list
+ruleset=🍀 Proxy,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Global.list
 ruleset=🍀 Proxy,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Fucktaptap.txt
-ruleset=💧 Domestic,https://https://github.com/DivineEngine/Profiles/raw/master/Surge/Ruleset/China.list
-ruleset=💧 Domestic,https://https://github.com/DivineEngine/Profiles/raw/master/Surge/Ruleset/Extra/ChinaIP.list
+ruleset=💧 Domestic,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/China.list
+ruleset=💧 Domestic,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Extra/ChinaIP.list
 ruleset=💧 Domestic,[]GEOIP,CN
 ruleset=🔔 Other,[]MATCH
 
-clash_rule_base=https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/clash.txt
-surge_rule_base=https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/surge.txt
+clash_rule_base=https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/all_base.tpl
+surge_rule_base=https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/all_base.tpl
 
 rename=剩余流量：(.*$)@D:$1
 rename=过期时间：.*([0-9]{2})-(.*)-(.*)@T:$1/$2/$3
