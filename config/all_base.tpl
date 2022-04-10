@@ -66,25 +66,28 @@ proxy-test-url = http://www.gstatic.com/generate_204
 always-real-ip = lens.l.google.com
 http-listen = 0.0.0.0:6152
 socks5-listen = 0.0.0.0:6153
+
 [Proxy]
 ~
+
 [Proxy Group]
 ~
+
 [Rule]
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/ruleset/surge/Direct.list,🎀 Direct,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subruleraw/main/ruleset/surge/Localareanetwork.list,🎀 Direct,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subruleraw/main/ruleset/surge/Fuckfalun.list,🎼 Reject,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subruleraw/main/ruleset/surge/Fuckmangaad.list,🎼 Reject,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subruleraw/main/ruleset/surge/Fuckscam.list,🎼 Reject,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subruleraw/main/ruleset/surge/Pixiv.list,🐺 Pixiv,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subruleraw/main/ruleset/surge/Twitter.list,🍎 Twitter,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subruleraw/main/ruleset/surge/Manga.list,💤 Manga,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subruleraw/main/ruleset/surge/Ecchi.list,🌱 Ecchi,update-interval=86400
+RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/ruleset/surge/Localareanetwork.list,🎀 Direct,update-interval=86400
+RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/ruleset/surge/Fuckfalun.list,🎼 Reject,update-interval=86400
+RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/ruleset/surge/Fuckmangaad.list,🎼 Reject,update-interval=86400
+RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/ruleset/surge/Fuckscam.list,🎼 Reject,update-interval=86400
+RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/ruleset/surge/Pixiv.list,🐺 Pixiv,update-interval=86400
+RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/ruleset/surge/Twitter.list,🍎 Twitter,update-interval=86400
+RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/ruleset/surge/Manga.list,💤 Manga,update-interval=86400
+RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/ruleset/surge/Ecchi.list,🌱 Ecchi,update-interval=86400
 RULE-SET,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Extra/Telegram/Telegram.list,🐈 Telegram,update-interval=86400
 RULE-SET,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/StreamingMedia/Streaming.list,☕ Globalmedia,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subruleraw/main/ruleset/surge/Speedtest.list,🍀 Proxy,update-interval=86400
+RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/ruleset/surge/Speedtest.list,🍀 Proxy,update-interval=86400
 RULE-SET,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Global.list,🍀 Proxy,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subruleraw/main/ruleset/surge/Fucktaptap.list,🍀 Proxy,update-interval=86400
+RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/ruleset/surge/Fucktaptap.list,🍀 Proxy,update-interval=86400
 RULE-SET,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/China.list,💧 Domestic,update-interval=86400
 RULE-SET,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Extra/ChinaIP.list,💧 Domestic,update-interval=86400
 GEOIP,CN,💧 Domestic
