@@ -145,31 +145,4 @@ proxy-test-url = http://www.gstatic.com/generate_204
 always-real-ip = lens.l.google.com
 http-listen = 0.0.0.0:6152
 socks5-listen = 0.0.0.0:6153
-
-[Proxy]
-~
-
-[Proxy Group]
-~
-
-[Rule]
-RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Direct.txt,🎀 Direct,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Localareanetwork.txt,🎀 Direct,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Fuckfalun.txt,🎼 Reject,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Fuckmangaad.txt,🎼 Reject,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Fuckscam.txt,🎼 Reject,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Pixiv.txt,🐺 Pixiv,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Twitter.txt,🍎 Twitter,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Manga.txt,💤 Manga,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Ecchi.txt,🌱 Ecchi,update-interval=86400
-RULE-SET,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Extra/Telegram/Telegram.list,🐈 Telegram,update-interval=86400
-RULE-SET,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/StreamingMedia/Streaming.list,☕ Globalmedia,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Speedtest.txt,🍀 Proxy,update-interval=86400
-RULE-SET,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Global.list,🍀 Proxy,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/raw/main/rule/Fucktaptap.txt,🍀 Proxy,update-interval=86400
-RULE-SET,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/China.list,💧 Domestic,update-interval=86400
-RULE-SET,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Extra/ChinaIP.list,💧 Domestic,update-interval=86400
-GEOIP,CN,💧 Domestic
-FINAL,🔔 Other
-
 {% endif %}
