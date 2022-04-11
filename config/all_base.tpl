@@ -6,14 +6,11 @@ mode: rule
 log-level: info
 ipv6: false
 external-controller: 0.0.0.0:9090
-secret: "000"
+secret: "123"
 dns:
   enable: true
   listen: 0.0.0.0:53
   ipv6: false
-  default-nameserver:
-    - 114.114.114.114
-    - 8.8.8.8
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   use-hosts: true
@@ -21,138 +18,29 @@ dns:
     - '*.lan'
     - stun.l.google.com
   nameserver:
-    - 114.114.114.114
-    - 223.5.5.5
-    - dhcp://system
+    - 119.29.29.29
+    - 1.1.1.1
 proxies: ~
 proxy-groups: ~
 rule-providers:
-  Direct:
-    type: http
-    behavior: classical
-    url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Direct.yaml
-    path: ./Ruleset/Direct.yaml
-    interval: 86400
-  Localareanetwork:
-    type: http
-    behavior: classical
-    url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Localareanetwork.yaml
-    path: ./Ruleset/Localareanetwork.yaml
-    interval: 86400
-  Fuckfalun:
-    type: http
-    behavior: classical
-    url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Fuckfalun.yaml
-    path: ./Ruleset/Fuckfalun.yaml
-    interval: 86400
-  Fuckscam:
-    type: http
-    behavior: classical
-    url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Fuckscam.yaml
-    path: ./Ruleset/Fuckscam.yaml
-    interval: 86400
-  Fuckmangaad:
-    type: http
-    behavior: classical
-    url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Fuckmangaad.yaml
-    path: ./Ruleset/Fuckmangaad.yaml
-    interval: 86400
-  BanAD:
-    type: http
-    behavior: classical
-    url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/BanAD.yaml
-    path: ./Ruleset/BanAD.yaml
-    interval: 86400
-  BanEasyList:
-    type: http
-    behavior: classical
-    url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/BanEasyList.yaml
-    path: ./Ruleset/BanEasyList.yaml
-    interval: 86400
-  BanEasyPrivacy:
-    type: http
-    behavior: classical
-    url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/BanEasyPrivacy.yaml
-    path: ./Ruleset/BanEasyPrivacy.yaml
-    interval: 86400
-  BanProgramAD:
-    type: http
-    behavior: classical
-    url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/BanProgramAD.yaml
-    path: ./Ruleset/BanProgramAD.yaml
-    interval: 86400
-  Pixiv:
-    type: http
-    behavior: classical
-    url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Pixiv.yaml
-    path: ./Ruleset/Pixiv.yaml
-    interval: 86400
-  Twitter:
-    type: http
-    behavior: classical
-    url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Twitter.yaml
-    path: ./Ruleset/Twitter.yaml
-    interval: 86400
-  Manga:
-    type: http
-    behavior: classical
-    url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Manga.yaml
-    path: ./Ruleset/Manga.yaml
-    interval: 86400
-  Ecchi:
-    type: http
-    behavior: classical
-    url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Ecchi.yaml
-    path: ./Ruleset/Ecchi.yaml
-    interval: 86400
-  Telegram:
-    type: http
-    behavior: classical
-    url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/Extra/Telegram/Telegram.yaml
-    path: ./Ruleset/Telegram.yaml
-    interval: 86400
-  Streaming:
-    type: http
-    behavior: classical
-    url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/StreamingMedia/Streaming.yaml
-    path: ./Ruleset/Streaming.yaml
-    interval: 86400
-  Speedtest:
-    type: http
-    behavior: classical
-    url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Speedtest.yaml
-    path: ./Ruleset/Speedtest.yaml
-    interval: 86400
-  Global:
-    type: http
-    behavior: classical
-    url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/Global.yaml
-    path: ./Ruleset/Global.yaml
-    interval: 86400
-  Fucktaptap:
-    type: http
-    behavior: classical
-    url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Fucktaptap.yaml
-    path: ./Ruleset/Fucktaptap.yaml
-    interval: 86400
-  China:
-    type: http
-    behavior: classical
-    url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/China.yaml
-    path: ./Ruleset/China.yaml
-    interval: 86400
-  ChinaDomain:
-    type: http
-    behavior: classical
-    url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/ChinaDomain.yaml
-    path: ./Ruleset/ChinaDomain.yaml
-    interval: 86400
-  ChinaIP:
-    type: http
-    behavior: ipcidr
-    url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/Extra/ChinaIP.yaml
-    path: ./Ruleset/ChinaIP.yaml
-    interval: 86400  
+  Direct: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Direct.yaml, path: ./Ruleset/Direct.yaml, interval: 86400 }
+  Localareanetwork: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Localareanetwork.yaml, path: ./Ruleset/Localareanetwork.yaml, interval: 86400 }
+  Fuckfalun: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Fuckfalun.yaml, path: ./Ruleset/Fuckfalun.yaml, interval: 86400 }
+  Fuckscam: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Fuckscam.yaml, path: ./Ruleset/Fuckscam.yaml, interval: 86400 }
+  Fuckmangaad: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Fuckmangaad.yaml, path: ./Ruleset/Fuckmangaad.yaml, interval: 86400 }
+  Baneasylist: { type: http, behavior: classical, url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/BanEasyList.yaml, path: ./Ruleset/BanEasyList.yaml, interval: 86400 }
+  Baneasyprivacy: { type: http, behavior: classical, url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/BanEasyPrivacy.yaml, path: ./Ruleset/BanEasyPrivacy.yaml, interval: 86400 }
+  Pixiv: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Pixiv.yaml, path: ./Ruleset/Pixiv.yaml, interval: 86400 }
+  Twitter: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Twitter.yaml, path: ./Ruleset/Twitter.yaml, interval: 86400 }
+  Manga: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Manga.yaml, path: ./Ruleset/Manga.yaml, interval: 86400 }
+  Ecchi: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Ecchi.yaml, path: ./Ruleset/Ecchi.yaml, interval: 86400 }
+  Telegram: { type: http, behavior: classical, url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/Extra/Telegram/Telegram.yaml, path: ./Ruleset/Telegram.yaml, interval: 86400 }
+  Streaming: { type: http, behavior: classical, url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/StreamingMedia/Streaming.yaml, path: ./Ruleset/Streaming.yaml, interval: 86400 }
+  Speedtest: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Speedtest.yaml, path: ./Ruleset/Speedtest.yaml, interval: 86400 }
+  Global: { type: http, behavior: classical, url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/Global.yaml, path: ./Ruleset/Global.yaml, interval: 86400 }
+  Fucktaptap: { type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Fucktaptap.yaml, path: ./Ruleset/Fucktaptap.yaml, interval: 86400 }
+  China: { type: http, behavior: classical, url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/China.yaml, path: ./Ruleset/China.yaml, interval: 86400 }
+  ChinaIP: { type: http, behavior: ipcidr, url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/Extra/ChinaIP.yaml, path: ./Ruleset/ChinaIP.yaml, interval: 86400}
 rules:
   - RULE-SET,Direct,🎀 Direct
   - RULE-SET,Localareanetwork,🎀 Direct
@@ -183,7 +71,7 @@ rules:
 {% if request.target == "surge" %}
 
 [General]
-dns-server = 114.114.114.114, 223.5.5.5, system
+dns-server = 119.29.29.29, 1.1.1.1
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
 proxy-test-url = http://www.gstatic.com/generate_204
 always-real-ip = stun.l.google.com
@@ -208,12 +96,9 @@ RULE-SET,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Speedtest.list,🍀 Proxy,update-interval=86400
 RULE-SET,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Global.list,🍀 Proxy,update-interval=86400
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Fucktaptap.list,🍀 Proxy,update-interval=86400
-RULE-SET,https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanAD.list,🍓 Adblock,update-interval=86400
 RULE-SET,https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanEasyList.list,🍓 Adblock,update-interval=86400
 RULE-SET,https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanEasyPrivacy.list,🍓 Adblock,update-interval=86400
-RULE-SET,https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanProgramAD.list,🍓 Adblock,update-interval=86400
 RULE-SET,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/China.list,💧 Domestic,update-interval=86400
-RULE-SET,https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaDomain.list,💧 Domestic,update-interval=86400
 RULE-SET,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Extra/ChinaIP.list,💧 Domestic,update-interval=86400
 GEOIP,CN,💧 Domestic
 FINAL,🔔 Other
