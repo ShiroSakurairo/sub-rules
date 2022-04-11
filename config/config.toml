@@ -56,11 +56,6 @@ name = "🔔 Other"
 type = "select"
 rule = ["[]🍀 Proxy", "[]🎀 Direct", "[]🎼 Reject", "[]🍮 Line"]
 
-#[[custom_groups]]
-#name = "❄️ IPLC"
-#type = "select"
-#rule = ["🐾 IPLC|TS", "🐶 IPLC|HK|TS", "🎈 IPLC|SG|TS", "PC.A", "PC.B", "PC.C", "PC.D", "PC.E", "PC.F", "PC.G", "PC.H", "PC.I", "PC.J", "PC.K", "PC.L", "PC.M", "PC.N", "PC.O", "PC.P", "PC.Q", "PC.R", "PC.S", "PC.T", "PC.U", "PC.V", "PC.W", "PC.X", "PC.Y", "PC.Z
-#
 [[custom_groups]]
 name = "💜 RELAY"
 type = "select"
@@ -96,55 +91,10 @@ name = "🍃 TW|SC"
 type = "select"
 rule = ["[]🎨 RELAY|TW|TS", "(.*TW)"]
 
-#[[custom_groups]]
-#name = "🐾 IPLC|TS"
-#type = "url-test"
-#rule = ["PC(.*JP.)", "PC(.*HK.)", "PC(.*SG.)"]
-#url = "http://www.gstatic.com/generate_204"
-#interval = 600
-#timeout = 5
-#tolerance = 100
-#lazy = true
 
-#[[custom_groups]]
-#name = "❤️ IPLC|JP|TS"
-#type = "url-test"
-#rule = ["PC(.*JP.)"]
-#url = "http://www.gstatic.com/generate_204"
-#interval = 600
-#timeout = 5
-#tolerance = 100
-#lazy = true
 
-#[[custom_groups]]
-#name = "🐶 IPLC|HK|TS"
-#type = "url-test"
-#rule = ["PC(.*HK.)"]
-#url = "http://www.gstatic.com/generate_204"
-#interval = 600
-#timeout = 5
-#tolerance = 100
-#lazy = true
 
-#[[custom_groups]]
-#name = "🎈 IPLC|SG|TS"
-#type = "url-test"
-#rule = ["PC(.*SG.)"]
-#url = "http://www.gstatic.com/generate_204"
-#interval = 600
-#timeout = 5
-#tolerance = 100
-#lazy = true
 
-#[[custom_groups]]
-#name = "🐥 RELAY|TS"
-#type = "url-test"
-#rule = ["RE(.*JP.)(.*1x)", "RE(.*HK.)(.*1x)", "RE(.*SG.)(.*1x)", "RE(.*US.)(.*1x)", "RE(.*TW.)(.*1x)"]
-#url = "http://www.gstatic.com/generate_204"
-#interval = 600
-#timeout = 5
-#tolerance = 100
-#lazy = true
 
 [[custom_groups]]
 name = "🍥 RELAY|JP|TS"
@@ -205,8 +155,6 @@ rule = ["[]DIRECT"]
 name = "🎼 Reject"
 type = "select"
 rule = ["[]REJECT"]
-#[[rulesets]]
-#import = ""
 
 [[template_args]]
 key = "clash.dns.port"
