@@ -6,7 +6,7 @@ mode: rule
 log-level: info
 ipv6: false
 external-controller: 0.0.0.0:9090
-secret: "123"
+secret: ""
 dns:
   enable: true
   listen: 0.0.0.0:53
@@ -56,10 +56,8 @@ rules:
   - RULE-SET,Speedtest,🍀 Proxy
   - RULE-SET,Global,🍀 Proxy
   - RULE-SET,Fucktaptap,🍀 Proxy
-  - RULE-SET,BanAD,🍓 Adblock
   - RULE-SET,BanEasyList,🍓 Adblock
   - RULE-SET,BanEasyPrivacy,🍓 Adblock
-  - RULE-SET,BanProgramAD,🍓 Adblock
   - RULE-SET,China,💧 Domestic
   - RULE-SET,ChinaDomain,💧 Domestic
   - RULE-SET,ChinaIP,💧 Domestic
