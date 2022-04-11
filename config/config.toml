@@ -3,21 +3,152 @@ version = 1
 enable_rule_generator = false
 overwrite_original_rules = false
 
-# Options for custom base configuration file
 clash_rule_base = "base/forcerule.yml"
-#surge_rule_base = "base/surge.conf"
-#surfboard_rule_base = "base/surfboard.conf"
-#mellow_rule_base = "base/mellow.conf"
-#quan_rule_base = "base/quan.conf"
-#quanx_rule_base = "base/quanx.conf"
+surge_rule_base = "base/surge.conf"
 
-# Options for adding emojis
-#add_emoji = true
-#remove_old_emoji = true
+add_emoji = true
+remove_old_emoji = true
+[[emoji]]
+match = "HK"
+emoji = "🐟"
 
-# Options for filtering nodes
-#include_remarks = []
-#exclude_remarks = []
+[[emoji]]
+match = "SG"
+emoji = "❣️"
+
+[[emoji]]
+match = "JP"
+emoji = "🥧"
+
+[[emoji]]
+match = "KR"
+emoji = "🍬"
+
+[[emoji]]
+match = "TW"
+emoji = "🍦"
+
+[[emoji]]
+match = "AU"
+emoji = "🐰"
+
+[[emoji]]
+match = "DE"
+emoji = "🌷"
+
+[[emoji]]
+match = "UK"
+emoji = "🦊"
+
+[[emoji]]
+match = "US"
+emoji = "🎧"
+
+[[emoji]]
+match = "RU"
+emoji = "☔"
+
+[[emoji]]
+match = "IN"
+emoji = "🎵"
+
+[[emoji]]
+match = "MY"
+emoji = "🍈"
+
+[[emoji]]
+match = "TU"
+emoji = "🕊️"
+
+[[emoji]]
+match = "AR"
+emoji = "🎗️"
+
+[[emoji]]
+match = "TH"
+emoji = "🍃"
+
+[[emoji]]
+match = "BO"
+emoji = "🧸"
+
+[[emoji]]
+match = "ES"
+emoji = "🍼"
+
+[[emoji]]
+match = "NL"
+emoji = "🐭"
+
+[[emoji]]
+match = "PH"
+emoji = "🚇"
+
+[[emoji]]
+match = "CA"
+emoji = "💫"
+
+[[emoji]]
+match = "PL"
+emoji = "♦️"
+
+[[emoji]]
+match = "ID"
+emoji = "🎗️"
+
+[[emoji]]
+match = "VN"
+emoji = "🥂"
+
+[[emoji]]
+match = "CH"
+emoji = "🤍"
+
+[[emoji]]
+match = "MX"
+emoji = "📕"
+
+[[emoji]]
+match = "IT"
+emoji = "🌺"
+
+[[emoji]]
+match = "FR"
+emoji = "🍄"
+
+[[emoji]]
+match = "HU"
+emoji = "🌨️"
+
+[[emoji]]
+match = "SE"
+emoji = "💐"
+
+[[emoji]]
+match = "LU"
+emoji = "🍸"
+
+[[emoji]]
+match = "UA"
+emoji = "🍰"
+
+[[emoji]]
+match = "AT"
+emoji = "🧁"
+
+[[emoji]]
+match = "EX"
+emoji = "🍩"
+
+[[emoji]]
+match = "D:"
+emoji = "❄️"
+
+[[emoji]]
+match = "T:"
+emoji = "🍭"
+
+exclude_remarks = [(官网|产品|平台|回国|更新)]
 
 [[custom_groups]]
 name = "🍀 Proxy"
