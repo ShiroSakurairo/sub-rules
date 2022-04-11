@@ -3,7 +3,7 @@ version = 1
 enable_rule_generator = false
 overwrite_original_rules = false
 
-clash_rule_base = "base/forcerule.yml"
+clash_rule_base = "https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/all_base.tpl"
 surge_rule_base = "base/surge.conf"
 
 add_emoji = false
