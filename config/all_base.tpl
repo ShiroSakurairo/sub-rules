@@ -5,6 +5,18 @@ allow-lan: false
 mode: rule
 log-level: info
 ipv6: false
+dns:
+  enable: true
+  ipv6: false
+  listen: ""
+  enhanced-mode: fake-ip
+  fake-ip-filter:
+    - '*.lan'
+    - '*.l.google.com'
+  nameserver:
+    - 223.5.5.5
+    - 8.8.4.4
+    - dhcp://system 
 proxies: ~
 proxy-groups: ~
 rule-providers:
@@ -47,11 +59,12 @@ rules:
 {% if request.target == "surge" %}
 
 [General]
-dns-server = 223.6.6.6, 8.8.4.4, system
+dns-server = 223.5.5.5, 8.8.4.4, system
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
-always-real-ip = stun.l.google.com
-#http-listen = 0.0.0.0:6152
-#socks5-listen = 0.0.0.0:6153
+proxy-test-url = http://www.gstatic.com/generate_204
+always-real-ip = *.lan, *.l.google.com
+http-listen = 0.0.0.0:6152
+socks5-listen = 0.0.0.0:6153
 [Proxy]
 ~
 [Proxy Group]
