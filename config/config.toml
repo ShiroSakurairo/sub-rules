@@ -15,10 +15,6 @@ exclude_remarks = [(官网|产品|平台|回国|更新)]
 name = "🍀 Proxy"
 type = "select"
 rule = ["❄️ IPLC", "[]💜 RELAY", "[]🌸 JP|SC", "[]🌹 HK|SC", "[]🌙 SG|SC", "[]🐆 US|SC", "[]🍮 Line", "[]🎀 Direct"]
-[[custom_groups]]
-name = "🐺 Pixiv"
-type = "select"
-rule = ["[]🍀 Proxy", "❄️ IPLC", "[]💜 RELAY", "[]🌸 JP|SC", "[]🌹 HK|SC", "[]🌙 SG|SC", "[]🐆 US|SC", "[]🍮 Line"]
 
 [[template_args]]
 key = "clash.dns.port"
