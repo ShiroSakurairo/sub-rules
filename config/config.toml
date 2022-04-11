@@ -1,6 +1,221 @@
 version = 1
 [custom]
+enable_rule_generator = false
+overwrite_original_rules = false
+
+# Options for custom base configuration file
+clash_rule_base = "base/forcerule.yml"
+#surge_rule_base = "base/surge.conf"
+#surfboard_rule_base = "base/surfboard.conf"
+#mellow_rule_base = "base/mellow.conf"
+#quan_rule_base = "base/quan.conf"
+#quanx_rule_base = "base/quanx.conf"
+
+# Options for adding emojis
+#add_emoji = true
+#remove_old_emoji = true
+
+# Options for filtering nodes
+#include_remarks = []
+#exclude_remarks = []
+
 [[custom_groups]]
 name = "🍀 Proxy"
 type = "select"
 rule = ["❄️ IPLC", "[]💜 RELAY", "[]🌸 JP|SC", "[]🌹 HK|SC", "[]🌙 SG|SC", "[]🐆 US|SC", "[]🍮 Line", "[]🎀 Direct"]
+
+[[custom_groups]]
+name = "🐺 Pixiv"
+type = "select"
+rule = ["[]🍀 Proxy", "❄️ IPLC", "[]💜 RELAY", "[]🌸 JP|SC", "[]🌹 HK|SC", "[]🌙 SG|SC", "[]🐆 US|SC", "[]🍮 Line"]
+
+[[custom_groups]]
+name = "🍎 Twitter"
+type = "select"
+rule = ["[]🍀 Proxy", "❄️ IPLC", "[]💜 RELAY", "[]🌸 JP|SC", "[]🌹 HK|SC", "[]🌙 SG|SC", "[]🐆 US|SC", "[]🍮 Line"]
+
+[[custom_groups]]
+name = "💤 Manga"
+type = "select"
+rule = ["[]🍀 Proxy", "❄️ IPLC", "[]💜 RELAY", "[]🌸 JP|SC", "[]🌹 HK|SC", "[]🌙 SG|SC", "[]🐆 US|SC", "[]🍃 TW|SC", "[]🎀 Direct", "[]🍮 Line"]
+
+[[custom_groups]]
+name = "🌱 Ecchi"
+type = "select"
+rule = ["[]🍀 Proxy", "❄️ IPLC", "[]💜 RELAY", "[]🌸 JP|SC", "[]🌹 HK|SC", "[]🌙 SG|SC", "[]🐆 US|SC", "[]🍃 TW|SC", "[]🎀 Direct", "[]🍮 Line"]
+
+[[custom_groups]]
+name = "🐈 Telegram"
+type = "select"
+rule = ["[]🍀 Proxy", "❄️ IPLC", "[]💜 RELAY", "[]🌸 JP|SC", "[]🌹 HK|SC", "[]🌙 SG|SC", "[]🐆 US|SC", "[]🍮 Line"]
+
+[[custom_groups]]
+name = "☕ Globalmedia"
+type = "select"
+rule = ["[]🍀 Proxy", "❄️ IPLC", "[]💜 RELAY", "[]🌸 JP|SC", "[]🌹 HK|SC", "[]🌙 SG|SC", "[]🐆 US|SC", "[]🍮 Line"]
+
+[[custom_groups]]
+name = "💧 Domestic"
+type = "select"
+rule = ["[]🎀 Direct", "[]🍀 Proxy", "[]🎼 Reject", "[]🍮 Line"]
+
+[[custom_groups]]
+name = "🔔 Other"
+type = "select"
+rule = ["[]🍀 Proxy", "[]🎀 Direct", "[]🎼 Reject", "[]🍮 Line"]
+
+#[[custom_groups]]
+#name = "❄️ IPLC"
+#type = "select"
+#rule = ["🐾 IPLC|TS", "🐶 IPLC|HK|TS", "🎈 IPLC|SG|TS", "PC.A", "PC.B", "PC.C", "PC.D", "PC.E", "PC.F", "PC.G", "PC.H", "PC.I", "PC.J", "PC.K", "PC.L", "PC.M", "PC.N", "PC.O", "PC.P", "PC.Q", "PC.R", "PC.S", "PC.T", "PC.U", "PC.V", "PC.W", "PC.X", "PC.Y", "PC.Z
+#
+[[custom_groups]]
+name = "💜 RELAY"
+type = "select"
+rule = ["🐥 RELAY|TS", "[]🌸 JP|SC", "[]🌹 HK|SC", "[]🌙 SG|SC", "[]🐆 US|SC", "[]🍃 TW|SC", "EX", "RE.A", "RE.B", "RE.C", "RE.D", "RE.E", "RE.F", "RE.G", "RE.H", "RE.I", "RE.J", "RE.K", "RE.L", "RE.M", "RE.N", "RE.O", "RE.P", "RE.Q", "RE.R", "RE.S", "RE.T", "RE.U", "RE.V", "RE.W", "RE.X", "RE.Y", "RE.Z"]
+
+[[custom_groups]]
+name = "🍮 Line"
+type = "select"
+rule = ["[]🎀 Direct", "[]🎼 Reject", "Data:", "Time:", "❄️ IPLC", "[]💜 RELAY", "[]🌸 JP|SC", "[]🌹 HK|SC", "[]🌙 SG|SC", "[]🐆 US|SC", "EX", "PC.A", "PC.B", "PC.C", "PC.D", "PC.E", "PC.F", "PC.G", "PC.H", "PC.I", "PC.J", "PC.K", "PC.L", "PC.M", "PC.N", "PC.O", "PC.P", "PC.Q", "PC.R", "PC.S", "PC.T", "PC.U", "PC.V", "PC.W", "PC.X", "PC.Y", "PC.Z", "RE.A", "RE.B", "RE.C", "RE.D", "RE.E", "RE.F", "RE.G", "RE.H", "RE.I", "RE.J", "RE.K", "RE.L", "RE.M", "RE.N", "RE.O", "RE.P", "RE.Q", "RE.R", "RE.S", "RE.T", "RE.U", "RE.V", "RE.W", "RE.X", "RE.Y", "RE.Z", ".*"]
+
+[[custom_groups]]
+name = "🌸 JP|SC"
+type = "select"
+rule = ["[]🍥 RELAY|JP|TS", "(.*JP)"]
+
+[[custom_groups]]
+name = "🌹 HK|SC"
+type = "select"
+rule = ["[]🍯 RELAY|HK|TS", "(.*HK)"]
+
+[[custom_groups]]
+name = "🌙 SG|SC"
+type = "select"
+rule = ["[]🐱 RELAY|SG|TS", "(.*SG)"]
+
+[[custom_groups]]
+name = "🐆 US|SC"
+type = "select"
+rule = ["[]🕊️ RELAY|US|TS", "(.*US)"]
+
+[[custom_groups]]
+name = "🍃 TW|SC"
+type = "select"
+rule = ["[]🎨 RELAY|TW|TS", "(.*TW)"]
+
+#[[custom_groups]]
+#name = "🐾 IPLC|TS"
+#type = "url-test"
+#rule = ["PC(.*JP.)", "PC(.*HK.)", "PC(.*SG.)"]
+#url = "http://www.gstatic.com/generate_204"
+#interval = 600
+#timeout = 5
+#tolerance = 100
+#lazy = true
+
+#[[custom_groups]]
+#name = "❤️ IPLC|JP|TS"
+#type = "url-test"
+#rule = ["PC(.*JP.)"]
+#url = "http://www.gstatic.com/generate_204"
+#interval = 600
+#timeout = 5
+#tolerance = 100
+#lazy = true
+
+#[[custom_groups]]
+#name = "🐶 IPLC|HK|TS"
+#type = "url-test"
+#rule = ["PC(.*HK.)"]
+#url = "http://www.gstatic.com/generate_204"
+#interval = 600
+#timeout = 5
+#tolerance = 100
+#lazy = true
+
+#[[custom_groups]]
+#name = "🎈 IPLC|SG|TS"
+#type = "url-test"
+#rule = ["PC(.*SG.)"]
+#url = "http://www.gstatic.com/generate_204"
+#interval = 600
+#timeout = 5
+#tolerance = 100
+#lazy = true
+
+#[[custom_groups]]
+#name = "🐥 RELAY|TS"
+#type = "url-test"
+#rule = ["RE(.*JP.)(.*1x)", "RE(.*HK.)(.*1x)", "RE(.*SG.)(.*1x)", "RE(.*US.)(.*1x)", "RE(.*TW.)(.*1x)"]
+#url = "http://www.gstatic.com/generate_204"
+#interval = 600
+#timeout = 5
+#tolerance = 100
+#lazy = true
+
+[[custom_groups]]
+name = "🍥 RELAY|JP|TS"
+type = "url-test"
+rule = ["RE(.*JP.)(.*1x)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 600
+timeout = 5
+tolerance = 100
+lazy = true
+
+[[custom_groups]]
+name = "🍯 RELAY|HK|TS"
+type = "url-test"
+rule = ["RE(.*HK.)(.*1x)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 600
+timeout = 5
+tolerance = 100
+lazy = true
+
+[[custom_groups]]
+name = "🐱 RELAY|SG|TS"
+type = "url-test"
+rule = ["RE(.*SG.)(.*1x)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 600
+timeout = 5
+tolerance = 100
+lazy = true
+
+[[custom_groups]]
+name = "🕊️ RELAY|US|TS"
+type = "url-test"
+rule = ["RE(.*US.)(.*1x)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 600
+timeout = 5
+tolerance = 100
+lazy = true
+
+[[custom_groups]]
+name = "🎨 RELAY|TW|TS"
+type = "url-test"
+rule = ["RE(.*TW.)(.*1x)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 600
+timeout = 5
+tolerance = 100
+lazy = true
+
+[[custom_groups]]
+name = "🎀 Direct"
+type = "select"
+rule = ["[]DIRECT"]
+
+[[custom_groups]]
+name = "🎼 Reject"
+type = "select"
+rule = ["[]REJECT"]
+#[[rulesets]]
+#import = ""
+
+[[template_args]]
+key = "clash.dns.port"
+value = "5353"
