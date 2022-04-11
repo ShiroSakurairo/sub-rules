@@ -1,14 +1,3 @@
 version = 1
-[custom]
-enable_rule_generator = false
-overwrite_original_rules = false
-
-clash_rule_base = "https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/all_base.tpl"
-
-add_emoji = false
-
 [[custom_groups]]
 import = https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/groups.toml
-
-[[rulesets]]
-import = "https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/rulesets.toml"
