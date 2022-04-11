@@ -1,4 +1,4 @@
 version = 1
 [custom]
 [[custom_groups]]
-import = ["https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/groups.toml"]
+!!import = ["https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/groups.toml"]
