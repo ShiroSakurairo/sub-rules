@@ -8,7 +8,7 @@ clash_rule_base = "https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/a
 add_emoji = false
 
 [[custom_groups]]
-import!! = "https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/groups.toml"
+!!import = ["https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/groups.toml"]
 
 [[rulesets]]
 import = "https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/rulesets.toml"
