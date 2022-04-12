@@ -141,7 +141,7 @@ rule-providers:
     url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/ChinaDomain.yaml
     path: ./Ruleset/ChinaDomain
     interval: 86400
- rules:
+rules:
   - RULE-SET,Direct,🎀 Direct
   - RULE-SET,Localareanetwork,🎀 Direct
   - RULE-SET,Scam,🎼 Reject
