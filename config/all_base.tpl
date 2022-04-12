@@ -7,9 +7,16 @@ log-level: info
 ipv6: false
 dns:
   enable: true
-  listen: 0.0.0.0:53
-  ipv6: falsem
+  ipv6: false
+  listen: ""
+  default-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  - 8.8.4.4
+  - 1.0.0.1
   enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
   fake-ip-filter:
   - +.stun.*.*
   - +.stun.*.*.*
@@ -31,7 +38,8 @@ dns:
   - dhcp://system
 proxies: ~
 proxy-groups: ~
-Direct:
+rule-providers:
+  Direct:
     type: http
     behavior: classical
     url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Direct.yaml
@@ -95,13 +103,13 @@ Direct:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/BanAD.yaml
-    path: ./Ruleset/Banad.yaml
+    path: ./Ruleset/BanAD.yaml
     interval: 86400
   Banprogramad:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/BanProgramAD.yaml
-    path: ./Ruleset/Banprogramad.yaml
+    path: ./Ruleset/BanProgramAD.yaml
     interval: 86400
   Speedtest:
     type: http
@@ -119,7 +127,7 @@ Direct:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/ProxyLite.yaml
-    path: ./Ruleset/Proxylite.yaml
+    path: ./Ruleset/ProxyLite.yaml
     interval: 86400
   China:
     type: http
@@ -131,9 +139,9 @@ Direct:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/ChinaDomain.yaml
-    path: ./Ruleset/Chinadomain.yaml
+    path: ./Ruleset/ChinaDomain
     interval: 86400
-rules:
+ rules:
   - RULE-SET,Direct,🎀 Direct
   - RULE-SET,Localareanetwork,🎀 Direct
   - RULE-SET,Scam,🎼 Reject
@@ -142,15 +150,15 @@ rules:
   - RULE-SET,Manga,💤 Manga
   - RULE-SET,Ecchi,🌱 Ecchi
   - RULE-SET,Telegram,🐈 Telegram
-  - RULE-SET,Streaming,☕ Globalmedia
+  - RULE-SET,Streaming,☕ Streaming
   - RULE-SET,Mangaad,🍓 Block
   - RULE-SET,Banad,🍓 Block
   - RULE-SET,Banprogramad,🍓 Block
   - RULE-SET,Speedtest,🍀 Proxy
   - RULE-SET,Global,🍀 Proxy
-  - RULE-SET,ProxyLite,🍀 Proxy
+  - RULE-SET,Proxylite,🍀 Proxy
   - RULE-SET,China,💧 Domestic
-  - RULE-SET,ChinaDomain,💧 Domestic
+  - RULE-SET,Chinadomain,💧 Domestic
   - GEOIP,CN,💧 Domestic
   - MATCH,🔔 Other
 
@@ -163,8 +171,8 @@ dns-server = 223.5.5.5, 119.29.29.29, 8.8.4.4, 1.0.0.1, system
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
 proxy-test-url = http://www.gstatic.com/generate_204
 always-real-ip = *.stun.*.*, *.stun.*.*.*, *.stun.*.*.*.*, *.stun.*.*.*.*.*, *.l.google.com, *.n.n.srv.nintendo.net, *.stun.playstation.net, xbox.*.*.microsoft.com, *.*.xboxlive.com, *.msftncsi.com, *.msftconnecttest.com, *.mcdn.bilivideo.cn
-#http-listen = 0.0.0.0:6152
-#socks5-listen = 0.0.0.0:6153
+http-listen = 0.0.0.0:6152
+socks5-listen = 0.0.0.0:6153
 [Proxy]
 ~
 [Proxy Group]
@@ -179,7 +187,7 @@ RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Twit
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Manga.list,💤 Manga,update-interval=86400
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Ecchi.list,🌱 Ecchi,update-interval=86400
 RULE-SET,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Extra/Telegram/Telegram.list,🐈 Telegram,update-interval=86400
-RULE-SET,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/StreamingMedia/Streaming.list,☕ Globalmedia,update-interval=86400
+RULE-SET,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/StreamingMedia/Streaming.list,☕ Streaming,update-interval=86400
 RULE-SET,https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanAD.list,🍓 Block,update-interval=86400
 RULE-SET,https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanProgramAD.list,🍓 Block,update-interval=86400
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Speedtest.list,🍀 Proxy,update-interval=86400
