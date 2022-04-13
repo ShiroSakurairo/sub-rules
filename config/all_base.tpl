@@ -5,20 +5,17 @@ allow-lan: false
 mode: rule
 log-level: info
 ipv6: false
-external-controller: 127.0.0.1:9090
 dns:
   enable: false
-  listen: ""
+  listen: 0.0.0.0:53
   ipv6: false
   enhanced-mode: fake-ip
-  use-hosts: true
   fake-ip-filter:
     - '*.lan'
     - '*.l.google.com'
   nameserver:
-    - 114.114.114.114
     - 223.5.5.5
-    - dhcp://system
+    - 8.8.4.4
 proxies: ~
 proxy-groups: ~
 rule-providers:
@@ -43,15 +40,13 @@ rules:
   - RULE-SET,Direct,🎀 Direct
   - RULE-SET,Localareanetwork,🎀 Direct
   - RULE-SET,Scam,🎼 Reject
+  - RULE-SET,Mangaad,🍓 Block
   - RULE-SET,Pixiv,🐺 Pixiv
   - RULE-SET,Twitter,🍎 Twitter
   - RULE-SET,Manga,💤 Manga
   - RULE-SET,Ecchi,🌱 Ecchi
   - RULE-SET,Telegram,🐈 Telegram
   - RULE-SET,Streaming,☕ Streaming
-  - RULE-SET,Mangaad,🍓 Block
-  - RULE-SET,Banad,🍓 Block
-  - RULE-SET,Banprogramad,🍓 Block
   - RULE-SET,Speedtest,🍀 Proxy
   - RULE-SET,Global,🍀 Proxy
   - RULE-SET,Proxylite,🍀 Proxy
@@ -65,12 +60,12 @@ rules:
 {% if request.target == "surge" %}
 
 [General]
-dns-server = 114.114.114.114, 223.5.5.5, system
+dns-server = 223.5.5.5, 8.8.4.4
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
 proxy-test-url = http://www.gstatic.com/generate_204
 always-real-ip = *.l.google.com
-#http-listen = 0.0.0.0:1234
-#socks5-listen = 0.0.0.0:1235
+http-listen = 0.0.0.0:1234
+socks5-listen = 0.0.0.0:1235
 [Proxy]
 ~
 [Proxy Group]
@@ -79,15 +74,13 @@ always-real-ip = *.l.google.com
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Direct.list,🎀 Direct,update-interval=86400
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Localareanetwork.list,🎀 Direct,update-interval=86400
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Scam.list,🎼 Reject,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Mangaad.list,🎼 Reject,update-interval=86400
+RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Mangaad.list,🍓 Block,update-interval=86400
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Pixiv.list,🐺 Pixiv,update-interval=86400
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Twitter.list,🍎 Twitter,update-interval=86400
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Manga.list,💤 Manga,update-interval=86400
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Ecchi.list,🌱 Ecchi,update-interval=86400
 RULE-SET,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Extra/Telegram/Telegram.list,🐈 Telegram,update-interval=86400
 RULE-SET,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/StreamingMedia/Streaming.list,☕ Streaming,update-interval=86400
-RULE-SET,https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanAD.list,🍓 Block,update-interval=86400
-RULE-SET,https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanProgramAD.list,🍓 Block,update-interval=86400
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Speedtest.list,🍀 Proxy,update-interval=86400
 RULE-SET,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Global.list,🍀 Proxy,update-interval=86400
 RULE-SET,https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyLite.list,🍀 Proxy,update-interval=86400
