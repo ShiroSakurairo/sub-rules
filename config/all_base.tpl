@@ -30,135 +30,35 @@ dns:
     - '*.msftconnecttest.com'
     - '*.mcdn.bilivideo.cn'
   nameserver:
+    - 114.114.114.114
     - 223.5.5.5
-    - 119.29.29.29
-  fallback:
-    - 8.8.4.4
-    - 1.0.0.1
+  fallback: []
   fallback-filter:
-    geoip: true
-    geoip-code: CN
-    ipcidr:
-      - 0.0.0.0/8
-      - 127.0.0.0/8
-      - 240.0.0.0/4
-    domain:
-      - '+.google.com'
-      - '+.facebook.com'
-      - '+.youtube.com'
-      - '+.githubusercontent.com'
-      - '+.googlevideo.com'
+    geoip: ""
+    geoip-code: ""
+    ipcidr: []
+    domain: []
 proxies:
 proxy-groups:
 rule-providers:
-  Direct:
-    type: http
-    behavior: classical
-    url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Direct.yaml
-    path: ./Ruleset/Direct.yaml.yaml
-    interval: 86400
-  Localareanetwork:
-    type: http
-    behavior: classical
-    url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Localareanetwork.yaml
-    path: ./Ruleset/Localareanetwork.yaml
-    interval: 86400
-  Scam:
-    type: http
-    behavior: classical
-    url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Scam.yaml
-    path: ./Ruleset/Scam.yaml
-    interval: 86400
-  Mangaad:
-    type: http
-    behavior: classical
-    url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Mangaad.yaml
-    path: ./Ruleset/Mangaad.yaml
-    interval: 86400
-  Pixiv:
-    type: http
-    behavior: classical
-    url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Pixiv.yaml
-    path: ./Ruleset/Pixiv.yaml
-    interval: 86400
-  Twitter:
-    type: http
-    behavior: classical
-    url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Twitter.yaml
-    path: ./Ruleset/Twitter.yaml
-    interval: 86400
-  Manga:
-    type: http
-    behavior: classical
-    url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Manga.yaml
-    path: ./Ruleset/Manga.yaml
-    interval: 86400
-  Ecchi:
-    type: http
-    behavior: classical
-    url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Ecchi.yaml
-    path: ./Ruleset/Ecchi.yaml
-    interval: 86400
-  Telegram:
-    type: http
-    behavior: classical
-    url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/Extra/Telegram/Telegram.yaml
-    path: ./Ruleset/Telegram.yaml
-    interval: 86400
-  twitcasting:
-    type: http
-    behavior: classical
-    url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/twitcasting.yaml
-    path: ./Ruleset/twitcasting.yaml
-    interval: 86400
-  Streaming:
-    type: http
-    behavior: classical
-    url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/StreamingMedia/Streaming.yaml
-    path: ./Ruleset/Streaming.yaml
-    interval: 86400
-  Adbolck:
-    type: http
-    behavior: classical
-    url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanAD.yaml
-    path: ./Ruleset/Adbolck.yaml
-    interval: 86400
-  Adbolck2:
-    type: http
-    behavior: classical
-    url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/BanProgramAD.yaml
-    path: ./Ruleset/Adbolck2.yaml
-    interval: 86400
-  Speedtest:
-    type: http
-    behavior: classical
-    url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Speedtest.yaml
-    path: ./Ruleset/Speedtest.yaml
-    interval: 86400
-  Global:
-    type: http
-    behavior: classical
-    url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/Global.yaml
-    path: ./Ruleset/Global.yaml
-    interval: 86400
-  Proxylite:
-    type: http
-    behavior: classical
-    url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/ProxyLite.yaml
-    path: ./Ruleset/ProxyLite.yaml
-    interval: 86400
-  China:
-    type: http
-    behavior: classical
-    url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/China.yaml
-    path: ./Ruleset/China.yaml
-    interval: 86400
-  Chinadomain:
-    type: http
-    behavior: classical
-    url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/ChinaDomain.yaml
-    path: ./Ruleset/ChinaDomain
-    interval: 86400
+  Direct: {type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Direct.yaml, path: ./Ruleset/Direct.yaml.yaml, interval: 86400}
+  Localareanetwork: {type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Localareanetwork.yaml, path: ./Ruleset/Localareanetwork.yaml, interval: 86400}
+  Scam: {type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Scam.yaml, path: ./Ruleset/Scam.yaml, interval: 86400}
+  Mangaad: {type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Mangaad.yaml, path: ./Ruleset/Mangaad.yaml, interval: 86400}
+  Pixiv: {type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Pixiv.yaml, path: ./Ruleset/Pixiv.yaml, interval: 86400}
+  Twitter: {type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Twitter.yaml, path: ./Ruleset/Twitter.yaml, interval: 86400}
+  Manga: {type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Manga.yaml, path: ./Ruleset/Manga.yaml, interval: 86400}
+  Ecchi: {type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Ecchi.yaml, path: ./Ruleset/Ecchi.yaml, interval: 86400}
+  Telegram: {type: http, behavior: classical, url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/Extra/Telegram/Telegram.yaml, path: ./Ruleset/Telegram.yaml, interval: 86400}
+  twitcasting: {type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/twitcasting.yaml, path: ./Ruleset/twitcasting.yaml, interval: 86400}
+  Streaming: {type: http, behavior: classical, url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/StreamingMedia/Streaming.yaml, path: ./Ruleset/Streaming.yaml, interval: 86400}
+  Adbolck: {type: http, behavior: classical, url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/BanAD.yaml, path: ./Ruleset/Adbolck.yaml, interval: 86400}
+  Adbolck2: {type: http, behavior: classical, url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/BanProgramAD.yaml, path: ./Ruleset/Adbolck2.yaml, interval: 86400}
+  Speedtest: {type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Speedtest.yaml, path: ./Ruleset/Speedtest.yaml, interval: 86400}
+  Global: {type: http, behavior: classical, url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/Global.yaml, path: ./Ruleset/Global.yaml, interval: 86400}
+  Proxylite: {type: http, behavior: classical, url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/ProxyLite.yaml, path: ./Ruleset/ProxyLite.yaml, interval: 86400}
+  China: {type: http, behavior: classical, url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/China.yaml, path: ./Ruleset/China.yaml, interval: 86400}
+  Chinadomain: {type: http, behavior: classical, url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/ChinaDomain.yaml, path: ./Ruleset/ChinaDomain, interval: 86400}
 rules:
   - RULE-SET,Direct,🎀 Direct
   - RULE-SET,Localareanetwork,🎀 Direct
@@ -186,12 +86,12 @@ rules:
 {% if request.target == "surge" %}
 
 [General]
-dns-server = 223.5.5.5, 119.29.29.29, 8.8.4.4, 1.0.0.1
+dns-server = 114.114.114.114, 223.5.5.5
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
 proxy-test-url = http://www.gstatic.com/generate_204
 always-real-ip = *.stun.*.*, *.stun.*.*.*, *.stun.*.*.*.*, *.stun.*.*.*.*.*, *.l.google.com, *.n.n.srv.nintendo.net, *.stun.playstation.net, xbox.*.*.microsoft.com, *.*.xboxlive.com, *.msftncsi.com, *.msftconnecttest.com, *.mcdn.bilivideo.cn
-#http-listen = 0.0.0.0:6152
-#socks5-listen = 0.0.0.0:6153
+http-listen = 0.0.0.0:6152
+socks5-listen = 0.0.0.0:6153
 [Proxy]
 [Proxy Group]
 [Rule]
