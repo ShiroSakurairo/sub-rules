@@ -82,7 +82,7 @@ rules:
 {% if request.target == "surge" %}
 
 [General]
-dns-server = 223.5.5.5, 1.0.0.1
+dns-server = 223.5.5.5, 119.29.29.29, 8.8.4.4, 1.0.0.1, system
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
 proxy-test-url = http://www.gstatic.com/generate_204
 always-real-ip = *.lan, lens.l.google.com, stun.l.google.com
