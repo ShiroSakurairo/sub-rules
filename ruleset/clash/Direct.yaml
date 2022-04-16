@@ -1,6 +1,7 @@
 payload:
   - DOMAIN-SUFFIX,prts.wiki
   - DOMAIN-SUFFIX,fastgit.org
+  - DOMAIN-SUFFIX,cdn.jsdelivr.net
   - DOMAIN-KEYWORD,douyucdn
   #Virtual Droid
   - DOMAIN-SUFFIX,ktplay.com
