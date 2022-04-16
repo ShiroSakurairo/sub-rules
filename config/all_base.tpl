@@ -11,7 +11,7 @@ dns:
   enable: true
   ipv6: false
   listen: ""
-  enhanced-mode: fake-ip
+  enhanced-mode: redir-host
   fake-ip-range: 198.18.0.1/16
   use-hosts: true
   fake-ip-filter:
@@ -106,11 +106,11 @@ rule-providers:
     url: https://raw.fastgit.org/DivineEngine/Profiles/master/Clash/RuleSet/StreamingMedia/Streaming.yaml
     path: ./Ruleset/Streaming.yaml
     interval: 86400
-  Mangaad: 
+  Adblock: 
     type: http
-    behavior: classical
+    behavior: domain
     url: https://raw.fastgit.org/Loyalsoldier/clash-rules/release/reject.txt
-    path: ./Ruleset/Mangaad.yaml
+    path: ./Ruleset/Adblock.yaml
     interval: 86400
   Speedtest: 
     type: http
@@ -132,7 +132,7 @@ rule-providers:
     interval: 86400
   Gfwlist: 
     type: http
-    behavior: classical
+    behavior: domain
     url: https://raw.fastgit.org/Loyalsoldier/clash-rules/release/gfw.txt
     path: ./Ruleset/Gfwlist.yaml
     interval: 86400
