@@ -21,7 +21,6 @@ dns:
   nameserver:
     - 114.114.114.114
     - 223.5.5.5
-    - dhcp://system
   fallback:
     - 8.8.4.4
     - 1.0.0.1
@@ -56,11 +55,8 @@ rule-providers:
   Speedtest: {type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Speedtest.yaml, path: ./Ruleset/Speedtest.yaml, interval: 86400}
   Global: {type: http, behavior: classical, url: https://raw.fastgit.org/DivineEngine/Profiles/master/Clash/RuleSet/Global.yaml, path: ./Ruleset/Global.yaml, interval: 86400}
   Proxylite: {type: http, behavior: classical, url: https://raw.fastgit.org/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyLite.yaml, path: ./Ruleset/ProxyLite.yaml, interval: 86400}
-  Gfwlist: {type: http, behavior: domain, url: https://raw.fastgit.org/Loyalsoldier/clash-rules/release/gfw.txt, path: ./Ruleset/Gfwlist.yaml, interval: 86400}
-  Google: {type: http, behavior: domain, url: https://raw.fastgit.org/Loyalsoldier/clash-rules/release/google.txt, path: ./Ruleset/Google.yaml, interval: 86400}
   China: {type: http, behavior: classical, url: https://raw.fastgit.org/DivineEngine/Profiles/master/Clash/RuleSet/China.yaml, path: ./Ruleset/China.yaml, interval: 86400}
   Chinadomain: {type: http, behavior: classical, url: https://raw.fastgit.org/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml, path: ./Ruleset/ChinaDomain.yaml, interval: 86400}
-  Directlist: {type: http, behavior: domain, url: https://raw.fastgit.org/Loyalsoldier/clash-rules/release/direct.txt, path: ./Ruleset/Directlist.yaml, interval: 86400}
 rules:
   - RULE-SET,Direct,🎀 Direct
   - RULE-SET,Localareanetwork,🎀 Direct
@@ -77,11 +73,8 @@ rules:
   - RULE-SET,Speedtest,🍀 Proxy
   - RULE-SET,Global,🍀 Proxy
   - RULE-SET,Proxylite,🍀 Proxy
-  - RULE-SET,Gfwlist,🍀 Proxy
-  - RULE-SET,Google,🍀 Proxy
   - RULE-SET,China,💧 Domestic
   - RULE-SET,Chinadomain,💧 Domestic
-  - RULE-SET,Directlist,💧 Domestic
   - GEOIP,CN,💧 Domestic
   - MATCH,🔔 Other
 
@@ -90,7 +83,7 @@ rules:
 {% if request.target == "surge" %}
 
 [General]
-dns-server = 114.114.114.114, 223.5.5.5, 8.8.4.4, 1.0.0.1, system
+dns-server = 114.114.114.114, 223.5.5.5, 8.8.4.4, 1.0.0.1
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
 proxy-test-url = http://www.gstatic.com/generate_204
 internet-test-url = http://www.gstatic.cn/generate_204
@@ -115,11 +108,8 @@ RULE-SET,https://raw.fastgit.org/Loyalsoldier/surge-rules/release/ruleset/reject
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Speedtest.list,🍀 Proxy,update-interval=86400
 RULE-SET,https://raw.fastgit.org/DivineEngine/Profiles/master/Surge/Ruleset/Global.list,🍀 Proxy,update-interval=86400
 RULE-SET,https://raw.fastgit.org/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list,🍀 Proxy,update-interval=86400
-RULE-SET,https://raw.fastgit.org/Loyalsoldier/surge-rules/release/ruleset/gfw.txt,🍀 Proxy,update-interval=86400
-RULE-SET,https://raw.fastgit.org/Loyalsoldier/surge-rules/release/ruleset/google.txt,🍀 Proxy,update-interval=86400
 RULE-SET,https://raw.fastgit.org/DivineEngine/Profiles/master/Surge/Ruleset/China.list,💧 Domestic,update-interval=86400
 RULE-SET,https://raw.fastgit.org/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list,💧 Domestic,update-interval=86400
-RULE-SET,https://raw.fastgit.org/Loyalsoldier/surge-rules/release/ruleset/direct.txt,💧 Domestic,update-interval=86400
 GEOIP,CN,💧 Domestic
 FINAL,🔔 Other
 
