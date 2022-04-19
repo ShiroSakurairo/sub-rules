@@ -6,10 +6,6 @@ overwrite_original_rules = false
 clash_rule_base = "https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/all_base.tpl"
 surge_rule_base = "https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/all_base.tpl"
 
-add_emoji = true
-remove_old_emoji = true
-[[emojis.emoji]]
-import = "https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/emoji.toml"
 
 #include_remarks = []
 #exclude_remarks = []
