@@ -6,12 +6,8 @@ overwrite_original_rules = false
 clash_rule_base = "https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/all_base.tpl"
 surge_rule_base = "https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/all_base.tpl"
 
-
 #include_remarks = []
 #exclude_remarks = []
-
-[[custom_groups]]
-import = "https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/groups.toml"
 
 #[[rulesets]]
 #import = ""
