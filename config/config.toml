@@ -3,19 +3,14 @@ version = 1
 enable_rule_generator = false
 overwrite_original_rules = false
 
-# Options for custom base configuration file
 clash_rule_base = "https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/all_base.tpl"
 surge_rule_base = "https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/all_base.tpl"
-#surfboard_rule_base = "base/surfboard.conf"
-#mellow_rule_base = "base/mellow.conf"
-#quan_rule_base = "base/quan.conf"
-#quanx_rule_base = "base/quanx.conf"
 
-# Options for adding emojis
-#add_emoji = true
-#remove_old_emoji = true
+add_emoji = true
+remove_old_emoji = true
+[[emojis.emoji]]
+import = "https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/emoji.toml"
 
-# Options for filtering nodes
 #include_remarks = []
 #exclude_remarks = []
 
@@ -25,6 +20,5 @@ import = "https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/groups.tom
 #[[rulesets]]
 #import = ""
 
-[[template_args]]
-key = "clash.dns.port"
-value = "5353"
+[[node_pref.rename_node]]
+import = "https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/rename_node.toml"
