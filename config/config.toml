@@ -17,6 +17,15 @@ import = "https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/emoji.toml
 [[node_pref.rename_node]]
 import = "https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/rename_node.toml"
 
+[[node_pref]]
+import = "https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/rename_node.toml"
+
+[[node_pref.rename]]
+import = "https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/rename_node.toml"
+
+[[rename_node]]
+import = "https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/rename_node.toml"
+
 [[custom_groups]]
 import = "https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/groups.toml"
 
