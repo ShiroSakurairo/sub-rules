@@ -20,5 +20,5 @@ import = "https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/groups.tom
 #[[rulesets]]
 #import = ""
 
-[[node_pref.rename_node]]
+[[rename_node]]
 import = "https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/config/rename_node.toml"
