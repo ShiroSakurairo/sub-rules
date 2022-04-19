@@ -33,7 +33,7 @@ dns:
   fallback-filter:
     geoip: false
     geoip-code: ""
-    ipcidr:[]
+    ipcidr: []
     domain: []
 proxies:
 proxy-groups:
