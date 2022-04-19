@@ -61,27 +61,27 @@ rule = ["[]🎀 Direct", "[]🎼 Reject", "Data:", "Time:", "❄️ IPLC", "[]�
 [[custom_groups]]
 name = "🌸 JP|SC"
 type = "select"
-rule = ["[]🍥 RELAY|JP|TS "(.*JP)"]
+rule = ["[]🍥 RELAY|JP|TS", "(.*JP)"]
 
 [[custom_groups]]
 name = "🌹 HK|SC"
 type = "select"
-rule = ["[]🍯 RELAY|HK|TS "(.*HK)"]
+rule = ["[]🍯 RELAY|HK|TS", "(.*HK)"]
 
 [[custom_groups]]
 name = "🌙 SG|SC"
 type = "select"
-rule = ["[]🐱 RELAY|SG|TS "(.*SG)"]
+rule = ["[]🐱 RELAY|SG|TS", "(.*SG)"]
 
 [[custom_groups]]
 name = "🐆 US|SC"
 type = "select"
-rule = ["[]🕊️ RELAY|US|TS "(.*US)"]
+rule = ["[]🕊️ RELAY|US|TS", "(.*US)"]
 
 [[custom_groups]]
 name = "🍃 TW|SC"
 type = "select"
-rule = ["[]🎨 RELAY|TW|TS "(.*TW)"]
+rule = ["[]🎨 RELAY|TW|TS", "(.*TW)"]
 
 [[custom_groups]]
 name = "🍥 RELAY|JP|TS"
