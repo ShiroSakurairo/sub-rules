@@ -33,7 +33,7 @@ dns:
       - 0.0.0.0/8
       - 127.0.0.0/8
       - 240.0.0.0/4
-   domain:
+    domain:
       - '+.google.com'
       - '+.facebook.com'
       - '+.youtube.com'
