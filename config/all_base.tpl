@@ -18,8 +18,8 @@ dns:
   fake-ip-range: 198.18.0.1/16
   use-hosts: true
   fake-ip-filter:
-  - lens.l.google.com
-  - stun.l.google.com
+    - lens.l.google.com
+    - stun.l.google.com
   nameserver:
     - 114.114.114.114
     - 117.50.10.10
