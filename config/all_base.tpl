@@ -14,7 +14,7 @@ dns:
   nameserver-policy: {}
   default-nameserver:
     - 114.114.114.114
-    - 8.8.8.8
+    - 208.67.222.222
   enhanced-mode: redir-host
   fake-ip-range: 198.18.0.1/16
   use-hosts: true
@@ -24,10 +24,10 @@ dns:
     - stun.l.google.com
   nameserver:
     - 114.114.114.114
-    - 117.50.10.10
-  fallback: 
-    - 8.8.8.8
     - 208.67.222.222
+  fallback: 
+    - tls://dns.google.com:853
+    - tls://1dot1dot1dot1.cloudflare-dns.com:853
   fallback-filter:
     geoip: true
     geoip-code: CN
@@ -35,7 +35,7 @@ dns:
       - 0.0.0.0/8
       - 127.0.0.0/8
       - 240.0.0.0/4
-   domain:
+    domain:
       - '+.google.com'
       - '+.facebook.com'
       - '+.youtube.com'
