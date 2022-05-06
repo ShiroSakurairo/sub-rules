@@ -151,6 +151,14 @@ match = "奥地利"
 replace = "AT"
 
 [[rename_node]]
+match = "保加利亚"
+replace = "BG"
+
+[[rename_node]]
+match = "拉脱维亚"
+replace = "LV"
+
+[[rename_node]]
 match = "北京"
 replace = "BJ"
 

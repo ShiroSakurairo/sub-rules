@@ -127,6 +127,14 @@ match = "AT"
 emoji = "🧁"
 
 [[emoji]]
+match = "BG"
+emoji = "🥕"
+
+[[emoji]]
+match = "LV"
+emoji = "✂️"
+
+[[emoji]]
 match = "EX"
 emoji = "🍩"
 
