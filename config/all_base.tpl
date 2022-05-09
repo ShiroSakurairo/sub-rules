@@ -93,7 +93,7 @@ rule-providers:
   Telegram:
     type: http
     behavior: classical
-    url: https://raw.fastgit.org/DivineEngine/Profiles/master/Clash/RuleSet/Extra/Telegram/Telegram.yaml
+    url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/Extra/Telegram/Telegram.yaml
     path: ./RuleSet/Telegram.yaml
     interval: 86400
   Twitcasting:
@@ -105,7 +105,7 @@ rule-providers:
   Streaming:
     type: http
     behavior: classical
-    url: https://raw.fastgit.org/DivineEngine/Profiles/master/Clash/RuleSet/StreamingMedia/Streaming.yaml
+    url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/StreamingMedia/Streaming.yaml
     path: ./RuleSet/Streaming.yaml
     interval: 86400
   Speedtest:
@@ -117,25 +117,25 @@ rule-providers:
   Global:
     type: http
     behavior: classical
-    url: https://raw.fastgit.org/DivineEngine/Profiles/master/Clash/RuleSet/Global.yaml
+    url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/Global.yaml
     path: ./RuleSet/Global.yaml
     interval: 86400
   Proxylite:
     type: http
     behavior: classical
-    url: https://raw.fastgit.org/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyLite.yaml
+    url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/ProxyLite.yaml
     path: ./RuleSet/Proxylite.yaml
     interval: 86400
   China:
     type: http
     behavior: classical
-    url: https://raw.fastgit.org/DivineEngine/Profiles/master/Clash/RuleSet/China.yaml
+    url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/China.yaml
     path: ./RuleSet/China.yaml
     interval: 86400
   Chinadomain:
     type: http
     behavior: classical
-    url: https://raw.fastgit.org/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml
+    url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/ChinaDomain.yaml
     path: ./RuleSet/Chinadomain.yaml
     interval: 86400
 rules:
@@ -182,14 +182,14 @@ RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Pixi
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Twitter.list,🍎 Twitter,update-interval=86400
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Manga.list,💤 Manga,update-interval=86400
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Ecchi.list,🌱 Ecchi,update-interval=86400
-RULE-SET,https://raw.fastgit.org/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Telegram/Telegram.list,🐈 Telegram,update-interval=86400
+RULE-SET,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Extra/Telegram/Telegram.list,🐈 Telegram,update-interval=86400
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/twitcasting.list,☕ Streaming,update-interval=86400
-RULE-SET,https://raw.fastgit.org/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Streaming.list,☕ Streaming,update-interval=86400
+RULE-SET,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/StreamingMedia/Streaming.list,☕ Streaming,update-interval=86400
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Speedtest.list,🍀 Proxy,update-interval=86400
-RULE-SET,https://raw.fastgit.org/DivineEngine/Profiles/master/Surge/Ruleset/Global.list,🍀 Proxy,update-interval=86400
-RULE-SET,https://raw.fastgit.org/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list,🍀 Proxy,update-interval=86400
-RULE-SET,https://raw.fastgit.org/DivineEngine/Profiles/master/Surge/Ruleset/China.list,💧 Domestic,update-interval=86400
-RULE-SET,https://raw.fastgit.org/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list,💧 Domestic,update-interval=86400
+RULE-SET,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Global.list,🍀 Proxy,update-interval=86400
+RULE-SET,https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyLite.list,🍀 Proxy,update-interval=86400
+RULE-SET,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/China.list,💧 Domestic,update-interval=86400
+RULE-SET,https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaDomain.list,💧 Domestic,update-interval=86400
 GEOIP,CN,💧 Domestic
 FINAL,🔔 Other
 
