@@ -24,8 +24,8 @@ dns:
     - 114.114.114.114
     - 223.5.5.5
   fallback:
-    - https://dns.quad9.net/dns-query
-    - https://dns.dnshome.de/dns-query
+    - https://1.0.0.1/dns-query
+    - https://9.9.9.9/dns-query
   fallback-filter:
     geoip: true
     geoip-code: CN
@@ -83,7 +83,7 @@ rules:
 
 [General]
 dns-server = 114.114.114.114, 223.5.5.5
-doh-server = https://dns.quad9.net/dns-query, https://dns.dnshome.de/dns-query
+doh-server = https://1.0.0.1/dns-query, https://9.9.9.9/dns-query
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
 proxy-test-url = http://www.gstatic.com/generate_204
 internet-test-url = http://www.gstatic.cn/generate_204
