@@ -1,9 +1,11 @@
-;PicACG
+#PicACG
 DOMAIN,pica-pica.wikawika.xyz 
 DOMAIN,ad-channel.wikawika.xyz
-;dmzj
+#dmzj
 DOMAIN,area.propsad.com
 DOMAIN,wof.betylife.com
 DOMAIN-SUFFIX,sogoubaidusm.cn
 DOMAIN,hm.baidu.com
 DOMAIN-SUFFIX,cnzz.com
+#18comic
+DOMAIN-SUFFIX,adserver.juicyads.com
