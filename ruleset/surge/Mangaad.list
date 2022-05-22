@@ -8,4 +8,5 @@ DOMAIN-SUFFIX,sogoubaidusm.cn
 DOMAIN,hm.baidu.com
 DOMAIN-SUFFIX,cnzz.com
 #18comic
-DOMAIN-SUFFIX,adserver.juicyads.com
+DOMAIN-SUFFIX,juicyads.com
+DOMAIN-SUFFIX,jads.co
