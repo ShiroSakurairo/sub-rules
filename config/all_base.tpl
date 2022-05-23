@@ -69,7 +69,6 @@ rules:
   - RULE-SET,Telegram,🐈 Telegram
   - RULE-SET,Twitcasting,☕ Streaming
   - RULE-SET,Streaming,☕ Streaming
-  - RULE-SET,Game,💐 Game
   - RULE-SET,Speedtest,🍀 Proxy
   - RULE-SET,Global,🍀 Proxy
   - RULE-SET,Proxylite,🍀 Proxy
