@@ -86,12 +86,13 @@ rule = ["[]🎨 RELAY|TW|TS", "(.*TW)"]
 [[custom_groups]]
 name = "🍥 RELAY|JP|TS"
 type = "url-test"
-rule = ["RE(.*JP.)(.*1x)"]
+rule = ["RE(.*JP.)(?!0[0-8])(.*1x)"]
 url = "http://www.gstatic.com/generate_204"
 interval = 600
 timeout = 5
 tolerance = 100
 lazy = true
+hidden = false
 
 [[custom_groups]]
 name = "🍯 RELAY|HK|TS"
@@ -102,6 +103,7 @@ interval = 600
 timeout = 5
 tolerance = 100
 lazy = true
+hidden = false
 
 [[custom_groups]]
 name = "🐱 RELAY|SG|TS"
@@ -112,6 +114,7 @@ interval = 600
 timeout = 5
 tolerance = 100
 lazy = true
+hidden = false
 
 [[custom_groups]]
 name = "🕊️ RELAY|US|TS"
@@ -122,6 +125,7 @@ interval = 600
 timeout = 5
 tolerance = 100
 lazy = true
+hidden = false
 
 [[custom_groups]]
 name = "🎨 RELAY|TW|TS"
@@ -132,6 +136,7 @@ interval = 600
 timeout = 5
 tolerance = 100
 lazy = true
+hidden = false
 
 [[custom_groups]]
 name = "🎀 Direct"
