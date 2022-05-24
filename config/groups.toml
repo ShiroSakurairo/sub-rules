@@ -34,11 +34,6 @@ type = "select"
 rule = ["[]🍀 Proxy", "❄️ IPLC", "[]💜 RELAY", "[]🌸 JP|SC", "[]🌹 HK|SC", "[]🌙 SG|SC", "[]🐆 US|SC", "[]🍮 Line"]
 
 [[custom_groups]]
-name = "💐 Game"
-type = "select"
-rule = ["[]🍀 Proxy", "❄️ IPLC", "[]💜 RELAY", "[]🌸 JP|SC", "[]🌹 HK|SC", "[]🌙 SG|SC", "[]🐆 US|SC", "[]🍃 TW|SC", "[]🎀 Direct", "[]🍮 Line"]
-
-[[custom_groups]]
 name = "💧 Domestic"
 type = "select"
 rule = ["[]🎀 Direct", "[]🍀 Proxy", "[]🎼 Reject", "[]🍮 Line"]

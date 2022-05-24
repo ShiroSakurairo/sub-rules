@@ -24,8 +24,8 @@ dns:
     - 114.114.114.114
     - 223.5.5.5
   fallback:
-    - 8.8.4.4
-    - 1.0.0.1
+    - 8.8.8.8
+    - 1.1.1.1
   fallback-filter:
     geoip: true
     geoip-code: CN
