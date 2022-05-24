@@ -52,7 +52,6 @@ rule-providers:
   Telegram: {type: http, behavior: classical, url: https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/Extra/Telegram/Telegram.yaml, path: ./RuleSet/Telegram.yaml, interval: 86400}
   Twitcasting: {type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Twitcasting.yaml, path: ./RuleSet/Twitcasting.yaml, interval: 86400}
   Streaming: {type: http, behavior: classical, url: https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/StreamingMedia/Streaming.yaml, path: ./RuleSet/Streaming.yaml, interval: 86400}
-  Game: {type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Game.yaml, path: ./RuleSet/Game.yaml, interval: 86400}
   Speedtest: {type: http, behavior: classical, url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Speedtest.yaml, path: ./RuleSet/Speedtest.yaml, interval: 86400}
   Global: {type: http, behavior: classical, url: https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/Global.yaml, path: ./RuleSet/Global.yaml, interval: 86400}
   Proxylite: {type: http, behavior: classical, url: https://git.yumenaka.net/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyLite.yaml, path: ./RuleSet/Proxylite.yaml, interval: 86400}
@@ -70,7 +69,6 @@ rules:
   - RULE-SET,Telegram,🐈 Telegram
   - RULE-SET,Twitcasting,☕ Streaming
   - RULE-SET,Streaming,☕ Streaming
-  - RULE-SET,Game,💐 Game
   - RULE-SET,Speedtest,🍀 Proxy
   - RULE-SET,Global,🍀 Proxy
   - RULE-SET,Proxylite,🍀 Proxy
@@ -106,7 +104,6 @@ RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Ecch
 RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Telegram/Telegram.list,🐈 Telegram,update-interval=86400
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Twitcasting.list,☕ Streaming,update-interval=86400
 RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Streaming.list,☕ Streaming,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Game.list,💐 Game,update-interval=86400
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Speedtest.list,🍀 Proxy,update-interval=86400
 RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Global.list,🍀 Proxy,update-interval=86400
 RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list,🍀 Proxy,update-interval=86400
