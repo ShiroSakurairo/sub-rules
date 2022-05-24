@@ -92,7 +92,6 @@ interval = 600
 timeout = 5
 tolerance = 100
 lazy = true
-hidden = false
 
 [[custom_groups]]
 name = "🍯 RELAY|HK|TS"
@@ -103,7 +102,6 @@ interval = 600
 timeout = 5
 tolerance = 100
 lazy = true
-hidden = false
 
 [[custom_groups]]
 name = "🐱 RELAY|SG|TS"
@@ -114,7 +112,6 @@ interval = 600
 timeout = 5
 tolerance = 100
 lazy = true
-hidden = false
 
 [[custom_groups]]
 name = "🕊️ RELAY|US|TS"
@@ -125,7 +122,6 @@ interval = 600
 timeout = 5
 tolerance = 100
 lazy = true
-hidden = false
 
 [[custom_groups]]
 name = "🎨 RELAY|TW|TS"
@@ -136,7 +132,6 @@ interval = 600
 timeout = 5
 tolerance = 100
 lazy = true
-hidden = false
 
 [[custom_groups]]
 name = "🎀 Direct"
