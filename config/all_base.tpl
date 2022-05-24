@@ -99,14 +99,20 @@ rule-providers:
   Twitcasting:
     type: http
     behavior: classical
-    url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/twitcasting.yaml
-    path: ./RuleSet/twitcasting.yaml
+    url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Twitcasting.yaml
+    path: ./RuleSet/Twitcasting.yaml
     interval: 86400
   Streaming:
     type: http
     behavior: classical
     url: https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/StreamingMedia/Streaming.yaml
     path: ./RuleSet/Streaming.yaml
+    interval: 86400
+  Game:
+    type: http
+    behavior: classical
+    url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Game.yaml
+    path: ./RuleSet/Game.yaml
     interval: 86400
   Speedtest:
     type: http
@@ -150,6 +156,7 @@ rules:
   - RULE-SET,Telegram,🐈 Telegram
   - RULE-SET,Twitcasting,☕ Streaming
   - RULE-SET,Streaming,☕ Streaming
+  - RULE-SET,Game,💐 Game
   - RULE-SET,Speedtest,🍀 Proxy
   - RULE-SET,Global,🍀 Proxy
   - RULE-SET,Proxylite,🍀 Proxy
@@ -183,8 +190,9 @@ RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Twit
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Manga.list,💤 Manga,update-interval=86400
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Ecchi.list,🌱 Ecchi,update-interval=86400
 RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Telegram/Telegram.list,🐈 Telegram,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/twitcasting.list,☕ Streaming,update-interval=86400
+RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Twitcasting.list,☕ Streaming,update-interval=86400
 RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Streaming.list,☕ Streaming,update-interval=86400
+RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Game.list,💐 Game,update-interval=86400
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Speedtest.list,🍀 Proxy,update-interval=86400
 RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Global.list,🍀 Proxy,update-interval=86400
 RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list,🍀 Proxy,update-interval=86400
