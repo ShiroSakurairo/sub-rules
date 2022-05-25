@@ -170,8 +170,8 @@ skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10
 proxy-test-url = http://www.gstatic.com/generate_204
 internet-test-url = http://www.gstatic.cn/generate_204
 always-real-ip = lens.l.google.com, stun.l.google.com
-http-listen = 0.0.0.0:6152
-socks5-listen = 0.0.0.0:6153
+#http-listen = 0.0.0.0:6152
+#socks5-listen = 0.0.0.0:6153
 udp-policy-not-supported-behaviour = DIRECT
 [Proxy]
 [Proxy Group]
