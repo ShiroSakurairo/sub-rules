@@ -34,6 +34,11 @@ type = "select"
 rule = ["[]🍀 Proxy", "❄️ IPLC", "[]💜 RELAY", "[]🌸 JP|SC", "[]🌹 HK|SC", "[]🌙 SG|SC", "[]🐆 US|SC", "[]🍮 Line"]
 
 [[custom_groups]]
+name = "💐 Game"
+type = "select"
+rule = ["[]🍀 Proxy", "❄️ IPLC", "[]💜 RELAY", "[]🌸 JP|SC", "[]🌹 HK|SC", "[]🌙 SG|SC", "[]🐆 US|SC", "[]🍮 Line"]
+
+[[custom_groups]]
 name = "💧 Domestic"
 type = "select"
 rule = ["[]🎀 Direct", "[]🍀 Proxy", "[]🎼 Reject", "[]🍮 Line"]
@@ -82,6 +87,56 @@ rule = ["🕊️ RELAY|US|TS", "(.*US)"]
 name = "🍃 TW|SC"
 type = "select"
 rule = ["🎨 RELAY|TW|TS", "(.*TW)"]
+
+[[custom_groups]]
+name = "🍥 RELAY|JP|TS"
+type = "url-test"
+rule = ["RE(.*JP.)(?!0[0-8])(.*1x)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 600
+timeout = 5
+tolerance = 100
+lazy = true
+
+[[custom_groups]]
+name = "🍯 RELAY|HK|TS"
+type = "url-test"
+rule = ["RE(.*HK)(.*1x)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 600
+timeout = 5
+tolerance = 100
+lazy = true
+
+[[custom_groups]]
+name = "🐱 RELAY|SG|TS"
+type = "url-test"
+rule = ["RE(.*SG)(.*1x)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 600
+timeout = 5
+tolerance = 100
+lazy = true
+
+[[custom_groups]]
+name = "🕊️ RELAY|US|TS"
+type = "url-test"
+rule = ["RE(.*US)(.*1x)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 600
+timeout = 5
+tolerance = 100
+lazy = true
+
+[[custom_groups]]
+name = "🎨 RELAY|TW|TS"
+type = "url-test"
+rule = ["RE(.*TW)(.*1x)"]
+url = "http://www.gstatic.com/generate_204"
+interval = 600
+timeout = 5
+tolerance = 100
+lazy = true
 
 [[custom_groups]]
 name = "🎀 Direct"

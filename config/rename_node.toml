@@ -1,4 +1,8 @@
 [[rename_node]]
+match = "\t"
+replace = ""
+
+[[renam[[rename_node]]
 match = "剩余流量：(.*$)"
 replace = "D:$1"
 
