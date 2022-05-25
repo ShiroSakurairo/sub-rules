@@ -135,6 +135,14 @@ match = "LV"
 emoji = "✂️"
 
 [[emoji]]
+match = "DB"
+emoji = "🌨"
+
+[[emoji]]
+match = "IL"
+emoji = "🕊️"
+
+[[emoji]]
 match = "EX"
 emoji = "🍩"
 
