@@ -4,40 +4,6 @@ mixed-port: 7890
 allow-lan: false
 mode: rule
 log-level: info
-dns:
-  enable: true
-  ipv6: false
-  listen: ""
-  nameserver-policy: {}
-  default-nameserver:
-    - 114.114.114.114
-    - 223.5.5.5
-    - 8.8.8.8
-    - 1.1.1.1
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  use-hosts: true
-  fake-ip-filter:
-    - lens.l.google.com
-    - stun.l.google.com
-  nameserver:
-    - 114.114.114.114
-    - 223.5.5.5
-  fallback:
-    - 8.8.8.8
-    - 1.1.1.1
-  fallback-filter:
-    geoip: true
-    geoip-code: CN
-    ipcidr:
-      - 0.0.0.0/8
-      - 127.0.0.0/8
-      - 240.0.0.0/4
-    domain:
-      - +.google.com
-      - +.facebook.com
-      - +.youtube.com
-      - +.githubusercontent.com
 proxies:
 proxy-groups:
 rule-providers:
@@ -162,13 +128,10 @@ rules:
 {% if request.target == "surge" %}
 
 [General]
-dns-server = 114.114.114.114, 223.5.5.5
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
 proxy-test-url = http://www.gstatic.com/generate_204
 internet-test-url = http://www.gstatic.cn/generate_204
 always-real-ip = lens.l.google.com, stun.l.google.com
-http-listen = 0.0.0.0:6152
-socks5-listen = 0.0.0.0:6153
 udp-policy-not-supported-behaviour = DIRECT
 [Proxy]
 [Proxy Group]
