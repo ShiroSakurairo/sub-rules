@@ -3,7 +3,44 @@
 mixed-port: 7890
 allow-lan: false
 mode: rule
-log-level: info
+log-level: silent
+ipv6: false
+external-controller: 127.0.0.1:9090
+secret: ""
+dns:
+  enable: false
+  listen: ""
+  ipv6: false
+  default-nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+    - 8.8.4.4
+    - 1.0.0.1
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
+  fake-ip-filter:
+    - lens.l.google.com
+    - stun.l.google.com
+  nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+    - dhcp://system
+  fallback:
+    - 8.8.4.4
+    - 208.67.220.220
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 0.0.0.0/8
+      - 127.0.0.0/8
+      - 240.0.0.0/4
+    domain:
+      - '+.google.com'
+      - '+.facebook.com'
+      - '+.youtube.com'
+      - '+.githubusercontent.com'
 proxies:
 proxy-groups:
 rule-providers:
@@ -122,16 +159,19 @@ rules:
   - RULE-SET,Chinadomain,💧 Domestic
   - GEOIP,CN,💧 Domestic
   - MATCH,🔔 Other
-  
+
 {% endif %}
 
 {% if request.target == "surge" %}
 
 [General]
+dns-server = 119.29.29.29, 223.5.5.5, system
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
 proxy-test-url = http://www.gstatic.com/generate_204
 internet-test-url = http://www.gstatic.cn/generate_204
 always-real-ip = lens.l.google.com, stun.l.google.com
+http-listen = 0.0.0.0:7890
+socks5-listen = 0.0.0.0:7891
 udp-policy-not-supported-behaviour = DIRECT
 [Proxy]
 [Proxy Group]
