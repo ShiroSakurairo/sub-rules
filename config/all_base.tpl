@@ -9,7 +9,7 @@ external-controller: 127.0.0.1:9090
 secret: ""
 dns:
   enable: true
-  listen: 0.0.0.0:53
+  listen: ""
   ipv6: false
   default-nameserver:
     - 114.114.114.114
@@ -23,8 +23,8 @@ dns:
     - 114.114.114.114
     - 119.29.29.29
   fallback:
-    - 8.8.4.4
-    - 1.0.0.1
+    - 8.8.8.8
+    - 208.67.222.222
   fallback-filter:
     geoip: true
     geoip-code: CN
