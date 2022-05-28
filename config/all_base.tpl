@@ -154,7 +154,7 @@ rule-providers:
     type: http
     behavior: ipcidr
     url: https://git.yumenaka.net/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt
-    path: ./ruleset/Chinaip.yaml
+    path: ./RuleSet/Chinaip.yaml
     interval: 86400
 rules:
   - RULE-SET,Direct,🎀 Direct
