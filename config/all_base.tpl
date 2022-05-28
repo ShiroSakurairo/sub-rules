@@ -13,20 +13,21 @@ dns:
   ipv6: false
   default-nameserver:
     - 114.114.114.114
-    - 223.5.5.5
-    - 8.8.4.4
-    - 1.0.0.1
+    - 119.29.29.29
+    - 8.8.8.8
+    - 208.67.222.222
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   use-hosts: true
   fake-ip-filter:
+    - stun.l.google.com
     - lens.l.google.com
   nameserver:
     - 114.114.114.114
-    - 223.5.5.5
+    - 119.29.29.29
   fallback:
-    - 8.8.4.4
-    - 1.0.0.1
+    - 8.8.8.8
+    - 208.67.222.222
   fallback-filter:
     geoip: true
     geoip-code: CN
@@ -150,12 +151,6 @@ rule-providers:
     url: https://git.yumenaka.net/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml
     path: ./RuleSet/Chinadomain.yaml
     interval: 86400
-  Chinaip:
-    type: http
-    behavior: ipcidr
-    url: https://git.yumenaka.net/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt
-    path: ./RuleSet/Chinaip.yaml
-    interval: 86400
 rules:
   - RULE-SET,Direct,🎀 Direct
   - RULE-SET,Localareanetwork,🎀 Direct
@@ -175,7 +170,6 @@ rules:
   - RULE-SET,Proxylite,🍀 Proxy
   - RULE-SET,China,💧 Domestic
   - RULE-SET,Chinadomain,💧 Domestic
-  - RULE-SET,Chinaip,💧 Domestic
   - GEOIP,CN,💧 Domestic
   - MATCH,🔔 Other
 
@@ -184,7 +178,7 @@ rules:
 {% if request.target == "surge" %}
 
 [General]
-dns-server = 114.114.114.114, 223.5.5.5
+dns-server = 114.114.114.114, 119.29.29.29
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
 proxy-test-url = http://www.gstatic.com/generate_204
 internet-test-url = http://www.gstatic.cn/generate_204
@@ -213,7 +207,6 @@ RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine
 RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list,🍀 Proxy,update-interval=86400
 RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/China.list,💧 Domestic,update-interval=86400
 RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list,💧 Domestic,update-interval=86400
-RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/cncidr.txt,💧 Domestic,update-interval=86400
 GEOIP,CN,💧 Domestic
 FINAL,🔔 Other
 
