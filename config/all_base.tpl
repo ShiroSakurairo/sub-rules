@@ -3,16 +3,16 @@
 mixed-port: 7890
 allow-lan: false
 mode: rule
-log-level: silent
+log-level: info
 ipv6: false
 external-controller: 127.0.0.1:9090
 secret: ""
 dns:
-  enable: false
-  listen: ""
+  enable: true
+  listen: 0.0.0.0:53
   ipv6: false
   default-nameserver:
-    - 119.29.29.29
+    - 114.114.114.114
     - 223.5.5.5
     - 8.8.4.4
     - 1.0.0.1
@@ -21,14 +21,12 @@ dns:
   use-hosts: true
   fake-ip-filter:
     - lens.l.google.com
-    - stun.l.google.com
   nameserver:
-    - 119.29.29.29
+    - 114.114.114.114
     - 223.5.5.5
-    - dhcp://system
   fallback:
     - 8.8.4.4
-    - 208.67.220.220
+    - 1.0.0.1
   fallback-filter:
     geoip: true
     geoip-code: CN
@@ -98,6 +96,18 @@ rule-providers:
     url: https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/Extra/Telegram/Telegram.yaml
     path: ./RuleSet/Telegram.yaml
     interval: 86400
+  Googlesearch:
+    type: http
+    behavior: classical
+    url: https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/Extra/Google/GoogleSearch.yaml
+    path: ./RuleSet/Googlesearch.yaml
+    interval: 86400
+  Google:
+    type: http
+    behavior: domain
+    url: https://git.yumenaka.net/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/google.txt
+    path: ./RuleSet/Google.yaml
+    interval: 86400
   Twitcasting:
     type: http
     behavior: classical
@@ -140,6 +150,12 @@ rule-providers:
     url: https://git.yumenaka.net/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml
     path: ./RuleSet/Chinadomain.yaml
     interval: 86400
+  Chinaip:
+    type: http
+    behavior: ipcidr
+    url: https://git.yumenaka.net/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt
+    path: ./ruleset/Chinaip.yaml
+    interval: 86400
 rules:
   - RULE-SET,Direct,🎀 Direct
   - RULE-SET,Localareanetwork,🎀 Direct
@@ -150,6 +166,8 @@ rules:
   - RULE-SET,Manga,💤 Manga
   - RULE-SET,Ecchi,🌱 Ecchi
   - RULE-SET,Telegram,🐈 Telegram
+  - RULE-SET,Googlesearch,🎨 Google
+  - RULE-SET,Google,🎨 Google
   - RULE-SET,Twitcasting,☕ Streaming
   - RULE-SET,Streaming,☕ Streaming
   - RULE-SET,Speedtest,🍀 Proxy
@@ -157,6 +175,7 @@ rules:
   - RULE-SET,Proxylite,🍀 Proxy
   - RULE-SET,China,💧 Domestic
   - RULE-SET,Chinadomain,💧 Domestic
+  - RULE-SET,Chinaip,💧 Domestic
   - GEOIP,CN,💧 Domestic
   - MATCH,🔔 Other
 
@@ -165,11 +184,11 @@ rules:
 {% if request.target == "surge" %}
 
 [General]
-dns-server = 119.29.29.29, 223.5.5.5, system
+dns-server = 114.114.114.114, 223.5.5.5
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
 proxy-test-url = http://www.gstatic.com/generate_204
 internet-test-url = http://www.gstatic.cn/generate_204
-always-real-ip = lens.l.google.com, stun.l.google.com
+always-real-ip = lens.l.google.com
 http-listen = 0.0.0.0:7890
 socks5-listen = 0.0.0.0:7891
 udp-policy-not-supported-behaviour = DIRECT
@@ -185,6 +204,8 @@ RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Twit
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Manga.list,💤 Manga,update-interval=86400
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Ecchi.list,🌱 Ecchi,update-interval=86400
 RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Telegram/Telegram.list,🐈 Telegram,update-interval=86400
+RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Google/GoogleSearch.list,🎨 Google,update-interval=86400
+RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/google.txt,🎨 Google,update-interval=86400
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Twitcasting.list,☕ Streaming,update-interval=86400
 RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Streaming.list,☕ Streaming,update-interval=86400
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Speedtest.list,🍀 Proxy,update-interval=86400
@@ -192,6 +213,7 @@ RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine
 RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list,🍀 Proxy,update-interval=86400
 RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/China.list,💧 Domestic,update-interval=86400
 RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list,💧 Domestic,update-interval=86400
+RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/cncidr.txt,💧 Domestic,update-interval=86400
 GEOIP,CN,💧 Domestic
 FINAL,🔔 Other
 

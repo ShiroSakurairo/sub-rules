@@ -1,11 +1,10 @@
 payload:
   - DOMAIN-SUFFIX,prts.wiki
   - DOMAIN-SUFFIX,fastgit.org
-  - DOMAIN-SUFFIX,cdn.jsdelivr.net
   - DOMAIN-KEYWORD,douyucdn
   #Virtual Droid
-  - DOMAIN-SUFFIX,ktplay.com
   - IP-CIDR,92.38.154.0/24
+  - DOMAIN-SUFFIX,ktplay.com
   - DOMAIN-SUFFIX,photonengine.io
   - DOMAIN-SUFFIX,exitgames.com
   - DOMAIN-SUFFIX,adinmo.com
