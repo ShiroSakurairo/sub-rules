@@ -9,12 +9,14 @@ external-controller: 127.0.0.1:9090
 secret: ""
 dns:
   enable: true
-  listen: ""
+  listen: 0.0.0.0:53
   ipv6: false
   default-nameserver:
     - 114.114.114.114
     - 119.29.29.29
-  enhanced-mode: fake-ip
+    - 8.8.8.8
+    - 1.1.1.1
+  enhanced-mode: redir-host
   fake-ip-range: 198.18.0.1/16
   use-hosts: true
   fake-ip-filter:
@@ -24,7 +26,7 @@ dns:
     - 119.29.29.29
   fallback:
     - 8.8.8.8
-    - 208.67.222.222
+    - 1.1.1.1
   fallback-filter:
     geoip: true
     geoip-code: CN
@@ -44,109 +46,115 @@ rule-providers:
     type: http
     behavior: classical
     url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Direct.yaml
-    path: ./RuleSet/Direct.yaml
+    path: ./Rule/Direct.yaml
     interval: 86400
   Localareanetwork:
     type: http
     behavior: classical
     url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Localareanetwork.yaml
-    path: ./RuleSet/Localareanetwork.yaml
+    path: ./Rule/Localareanetwork.yaml
     interval: 86400
   Scam:
     type: http
     behavior: classical
     url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Scam.yaml
-    path: ./RuleSet/Scam.yaml
+    path: ./Rule/Scam.yaml
     interval: 86400
   Mangaad:
     type: http
     behavior: classical
     url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Mangaad.yaml
-    path: ./RuleSet/Mangaad.yaml
+    path: ./Rule/Mangaad.yaml
     interval: 86400
   Pixiv:
     type: http
     behavior: classical
     url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Pixiv.yaml
-    path: ./RuleSet/Pixiv.yaml
+    path: ./Rule/Pixiv.yaml
     interval: 86400
   Twitter:
     type: http
     behavior: classical
     url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Twitter.yaml
-    path: ./RuleSet/Twitter.yaml
+    path: ./Rule/Twitter.yaml
     interval: 86400
   Manga:
     type: http
     behavior: classical
     url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Manga.yaml
-    path: ./RuleSet/Manga.yaml
+    path: ./Rule/Manga.yaml
     interval: 86400
   Ecchi:
     type: http
     behavior: classical
     url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Ecchi.yaml
-    path: ./RuleSet/Ecchi.yaml
+    path: ./Rule/Ecchi.yaml
     interval: 86400
   Telegram:
     type: http
     behavior: classical
     url: https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/Extra/Telegram/Telegram.yaml
-    path: ./RuleSet/Telegram.yaml
+    path: ./Rule/Telegram.yaml
     interval: 86400
   Googlesearch:
     type: http
     behavior: classical
     url: https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/Extra/Google/GoogleSearch.yaml
-    path: ./RuleSet/Googlesearch.yaml
+    path: ./Rule/Googlesearch.yaml
     interval: 86400
   Google:
     type: http
     behavior: domain
     url: https://git.yumenaka.net/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/google.txt
-    path: ./RuleSet/Google.yaml
+    path: ./Rule/Google.yaml
+    interval: 86400
+  Game:
+    type: http
+    behavior: domain
+    url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Game.yaml
+    path: ./Rule/Game.yaml
     interval: 86400
   Twitcasting:
     type: http
     behavior: classical
     url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Twitcasting.yaml
-    path: ./RuleSet/Twitcasting.yaml
+    path: ./Rule/Twitcasting.yaml
     interval: 86400
   Streaming:
     type: http
     behavior: classical
     url: https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/StreamingMedia/Streaming.yaml
-    path: ./RuleSet/Streaming.yaml
+    path: ./Rule/Streaming.yaml
     interval: 86400
   Speedtest:
     type: http
     behavior: classical
     url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Speedtest.yaml
-    path: ./RuleSet/Speedtest.yaml
+    path: ./Rule/Speedtest.yaml
     interval: 86400
   Global:
     type: http
     behavior: classical
     url: https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/Global.yaml
-    path: ./RuleSet/Global.yaml
+    path: ./Rule/Global.yaml
     interval: 86400
   Proxylite:
     type: http
     behavior: classical
     url: https://git.yumenaka.net/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyLite.yaml
-    path: ./RuleSet/Proxylite.yaml
+    path: ./Rule/Proxylite.yaml
     interval: 86400
   China:
     type: http
     behavior: classical
     url: https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/China.yaml
-    path: ./RuleSet/China.yaml
+    path: ./Rule/China.yaml
     interval: 86400
   Chinadomain:
     type: http
     behavior: classical
     url: https://git.yumenaka.net/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml
-    path: ./RuleSet/Chinadomain.yaml
+    path: ./Rule/Chinadomain.yaml
     interval: 86400
 rules:
   - RULE-SET,Direct,🎀 Direct
@@ -160,6 +168,7 @@ rules:
   - RULE-SET,Telegram,🐈 Telegram
   - RULE-SET,Googlesearch,🎨 Google
   - RULE-SET,Google,🎨 Google
+  - RULE-SET,Game,💐 Game
   - RULE-SET,Twitcasting,☕ Streaming
   - RULE-SET,Streaming,☕ Streaming
   - RULE-SET,Speedtest,🍀 Proxy
@@ -175,11 +184,11 @@ rules:
 {% if request.target == "surge" %}
 
 [General]
-dns-server = 114.114.114.114, 119.29.29.29, 8.8.4.4, 1.0.0.1
+dns-server = 114.114.114.114, 119.29.29.29, 8.8.8.8, 1.1.1.1
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
 proxy-test-url = http://www.gstatic.com/generate_204
 internet-test-url = http://www.gstatic.cn/generate_204
-always-real-ip = lens.l.google.com
+always-real-ip = stun.l.google.com, lens.l.google.com
 http-listen = 0.0.0.0:7890
 socks5-listen = 0.0.0.0:7891
 udp-policy-not-supported-behaviour = DIRECT
