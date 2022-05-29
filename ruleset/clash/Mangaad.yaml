@@ -8,5 +8,3 @@ payload:
   - DOMAIN-SUFFIX,sogoubaidusm.cn
   - DOMAIN,hm.baidu.com
   - DOMAIN-SUFFIX,cnzz.com
-  #NeteaseDNS
-  - DOMAIN,nstool.netease.com

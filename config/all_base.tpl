@@ -14,21 +14,19 @@ dns:
   default-nameserver:
     - 114.114.114.114
     - 119.29.29.29
-    - 8.8.4.4
-    - 208.67.220.220
+    - 8.8.8.8
+    - 208.67.222.222
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   use-hosts: true
   fake-ip-filter:
-    - stun.l.google.com
     - lens.l.google.com
   nameserver:
     - 114.114.114.114
     - 119.29.29.29
-    - dhcp://system
   fallback:
-    - 8.8.4.4
-    - 208.67.220.220
+    - 8.8.8.8
+    - 208.67.222.222
   fallback-filter:
     geoip: true
     geoip-code: CN
@@ -92,12 +90,6 @@ rule-providers:
     url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Ecchi.yaml
     path: ./Rule/Ecchi.yaml
     interval: 86400
-  Telegram:
-    type: http
-    behavior: classical
-    url: https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/Extra/Telegram/Telegram.yaml
-    path: ./Rule/Telegram.yaml
-    interval: 86400
   Googlesearch:
     type: http
     behavior: classical
@@ -115,6 +107,12 @@ rule-providers:
     behavior: domain
     url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Game.yaml
     path: ./Rule/Game.yaml
+    interval: 86400
+  Telegram:
+    type: http
+    behavior: classical
+    url: https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/Extra/Telegram/Telegram.yaml
+    path: ./Rule/Telegram.yaml
     interval: 86400
   Twitcasting:
     type: http
@@ -167,10 +165,10 @@ rules:
   - RULE-SET,Twitter,🍎 Twitter
   - RULE-SET,Manga,💤 Manga
   - RULE-SET,Ecchi,🌱 Ecchi
-  - RULE-SET,Telegram,🐈 Telegram
   - RULE-SET,Googlesearch,🎨 Google
   - RULE-SET,Google,🎨 Google
   - RULE-SET,Game,💐 Game
+  - RULE-SET,Telegram,🐈 Telegram
   - RULE-SET,Twitcasting,☕ Streaming
   - RULE-SET,Streaming,☕ Streaming
   - RULE-SET,Speedtest,🍀 Proxy
@@ -186,13 +184,13 @@ rules:
 {% if request.target == "surge" %}
 
 [General]
-dns-server = 114.114.114.114, 119.29.29.29, 8.8.4.4, 208.67.220.220, system
+dns-server = 114.114.114.114, 119.29.29.29, 8.8.8.8, 208.67.222.222
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
 proxy-test-url = http://www.gstatic.com/generate_204
 internet-test-url = http://www.gstatic.cn/generate_204
-always-real-ip = stun.l.google.com, lens.l.google.com
-http-listen = 0.0.0.0:7890
-socks5-listen = 0.0.0.0:7891
+always-real-ip = lens.l.google.com
+#http-listen = 0.0.0.0:7890
+#socks5-listen = 0.0.0.0:7891
 udp-policy-not-supported-behaviour = DIRECT
 [Proxy]
 [Proxy Group]
@@ -205,9 +203,10 @@ RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Pixi
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Twitter.list,🍎 Twitter,update-interval=86400
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Manga.list,💤 Manga,update-interval=86400
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Ecchi.list,🌱 Ecchi,update-interval=86400
-RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Telegram/Telegram.list,🐈 Telegram,update-interval=86400
 RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Google/GoogleSearch.list,🎨 Google,update-interval=86400
 RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/google.txt,🎨 Google,update-interval=86400
+RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Game.list,💐 Game,update-interval=86400
+RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Telegram/Telegram.list,🐈 Telegram,update-interval=86400
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Twitcasting.list,☕ Streaming,update-interval=86400
 RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Streaming.list,☕ Streaming,update-interval=86400
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Speedtest.list,🍀 Proxy,update-interval=86400
