@@ -5,28 +5,29 @@ allow-lan: false
 mode: rule
 log-level: info
 ipv6: false
-external-controller: 127.0.0.1:9090
-secret: ""
+#external-controller: 127.0.0.1:9090
+#secret: ""
 dns:
   enable: true
   listen: 0.0.0.0:53
   ipv6: false
   default-nameserver:
-    - 114.114.114.114
     - 119.29.29.29
+    - 223.5.5.5
     - 8.8.8.8
-    - 208.67.222.222
+    - 1.1.1.1
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   use-hosts: true
   fake-ip-filter:
+    - stun.l.google.com
     - lens.l.google.com
   nameserver:
-    - 114.114.114.114
     - 119.29.29.29
+    - 223.5.5.5
   fallback:
     - 8.8.8.8
-    - 208.67.222.222
+    - 1.1.1.1
   fallback-filter:
     geoip: true
     geoip-code: CN
@@ -184,11 +185,11 @@ rules:
 {% if request.target == "surge" %}
 
 [General]
-dns-server = 114.114.114.114, 119.29.29.29, 8.8.8.8, 208.67.222.222
+dns-server = 119.29.29.29, 223.5.5.5
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
 proxy-test-url = http://www.gstatic.com/generate_204
 internet-test-url = http://www.gstatic.cn/generate_204
-always-real-ip = lens.l.google.com
+always-real-ip = stun.l.google.com, lens.l.google.com
 #http-listen = 0.0.0.0:7890
 #socks5-listen = 0.0.0.0:7891
 udp-policy-not-supported-behaviour = DIRECT

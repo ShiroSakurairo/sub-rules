@@ -79,14 +79,14 @@ type = "select"
 rule = ["[]🍯 RELAY|HK|TS", "(.*HK)"]
 
 [[custom_groups]]
-name = "🌙 SG|SC"
-type = "select"
-rule = ["[]🐱 RELAY|SG|TS", "(.*SG)"]
-
-[[custom_groups]]
 name = "🐆 US|SC"
 type = "select"
 rule = ["[]🕊️ RELAY|US|TS", "(.*US)"]
+
+[[custom_groups]]
+name = "🌙 SG|SC"
+type = "select"
+rule = ["[]🐱 RELAY|SG|TS", "(.*SG)"]
 
 [[custom_groups]]
 name = "🍃 TW|SC"
@@ -114,9 +114,9 @@ tolerance = 100
 lazy = true
 
 [[custom_groups]]
-name = "🐱 RELAY|SG|TS"
+name = "🕊️ RELAY|US|TS"
 type = "url-test"
-rule = ["RE(.*SG)(.*1x)"]
+rule = ["RE(.*US)(.*1x)"]
 url = "http://www.gstatic.com/generate_204"
 interval = 600
 timeout = 5
@@ -124,9 +124,9 @@ tolerance = 100
 lazy = true
 
 [[custom_groups]]
-name = "🕊️ RELAY|US|TS"
+name = "🐱 RELAY|SG|TS"
 type = "url-test"
-rule = ["RE(.*US)(.*1x)"]
+rule = ["RE(.*SG)(.*1x)"]
 url = "http://www.gstatic.com/generate_204"
 interval = 600
 timeout = 5
