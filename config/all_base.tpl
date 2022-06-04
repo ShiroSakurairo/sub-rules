@@ -14,20 +14,20 @@ dns:
   default-nameserver:
     - 119.29.29.29
     - 223.5.5.5
+    - 208.67.222.222
     - 8.8.8.8
-    - 1.1.1.1
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   use-hosts: true
   fake-ip-filter:
-    - stun.l.google.com
     - lens.l.google.com
   nameserver:
     - 119.29.29.29
     - 223.5.5.5
+    - dhcp://system
   fallback:
+    - 208.67.222.222
     - 8.8.8.8
-    - 1.1.1.1
   fallback-filter:
     geoip: true
     geoip-code: CN
@@ -103,12 +103,6 @@ rule-providers:
     url: https://git.yumenaka.net/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/google.txt
     path: ./Rule/Google.yaml
     interval: 86400
-  Game:
-    type: http
-    behavior: domain
-    url: https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/clash/Game.yaml
-    path: ./Rule/Game.yaml
-    interval: 86400
   Telegram:
     type: http
     behavior: classical
@@ -168,7 +162,6 @@ rules:
   - RULE-SET,Ecchi,🌱 Ecchi
   - RULE-SET,Googlesearch,🎨 Google
   - RULE-SET,Google,🎨 Google
-  - RULE-SET,Game,💐 Game
   - RULE-SET,Telegram,🐈 Telegram
   - RULE-SET,Twitcasting,☕ Streaming
   - RULE-SET,Streaming,☕ Streaming
@@ -185,13 +178,13 @@ rules:
 {% if request.target == "surge" %}
 
 [General]
-dns-server = 119.29.29.29, 223.5.5.5
+dns-server = 119.29.29.29, 223.5.5.5, 208.67.222.222, 8.8.8.8, system
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
 proxy-test-url = http://www.gstatic.com/generate_204
 internet-test-url = http://www.gstatic.cn/generate_204
-always-real-ip = stun.l.google.com, lens.l.google.com
-#http-listen = 0.0.0.0:7890
-#socks5-listen = 0.0.0.0:7891
+always-real-ip = lens.l.google.com
+http-listen = 0.0.0.0:7890
+socks5-listen = 0.0.0.0:7891
 udp-policy-not-supported-behaviour = DIRECT
 [Proxy]
 [Proxy Group]
@@ -206,7 +199,6 @@ RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Mang
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Ecchi.list,🌱 Ecchi,update-interval=86400
 RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Google/GoogleSearch.list,🎨 Google,update-interval=86400
 RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/google.txt,🎨 Google,update-interval=86400
-RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Game.list,💐 Game,update-interval=86400
 RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Telegram/Telegram.list,🐈 Telegram,update-interval=86400
 RULE-SET,https://gitlab.com/ShiroSakurairo/subrule/-/raw/main/ruleset/surge/Twitcasting.list,☕ Streaming,update-interval=86400
 RULE-SET,https://git.yumenaka.net/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Streaming.list,☕ Streaming,update-interval=86400
