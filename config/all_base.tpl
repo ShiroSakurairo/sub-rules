@@ -5,28 +5,28 @@ allow-lan: false
 mode: rule
 log-level: info
 ipv6: false
-#external-controller: 127.0.0.1:9090
-#secret: ""
+external-controller: 127.0.0.1:9090
+secret: ""
 dns:
   enable: true
   listen: 0.0.0.0:53
   ipv6: false
   default-nameserver:
-    - 114.114.114.114
+    - 223.5.5.5
     - 119.29.29.29
-    - 8.8.8.8
-    - 208.67.222.222
+    - 8.8.4.4
+    - 1.0.0.1
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   use-hosts: true
   fake-ip-filter:
     - lens.l.google.com
   nameserver:
-    - 114.114.114.114
+    - 223.5.5.5
     - 119.29.29.29
   fallback:
-    - 8.8.8.8
-    - 208.67.222.222
+    - 8.8.4.4
+    - 1.0.0.1
   fallback-filter:
     geoip: true
     geoip-code: CN
@@ -177,7 +177,7 @@ rules:
 {% if request.target == "surge" %}
 
 [General]
-dns-server = 114.114.114.114, 119.29.29.29
+dns-server = 223.5.5.5, 119.29.29.29
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
 proxy-test-url = http://www.gstatic.com/generate_204
 internet-test-url = http://www.gstatic.cn/generate_204
