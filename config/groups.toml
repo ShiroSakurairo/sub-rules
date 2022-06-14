@@ -98,9 +98,9 @@ name = "🍥 RELAY|JP|TS"
 type = "url-test"
 rule = ["RE(.*JP.)(?!0[0-8])(.*1x)"]
 url = "http://www.gstatic.com/generate_204"
-interval = 600
-timeout = 5
+interval = 300
 tolerance = 100
+timeout = 5
 lazy = true
 
 [[custom_groups]]
@@ -108,9 +108,9 @@ name = "🍯 RELAY|HK|TS"
 type = "url-test"
 rule = ["RE(.*HK)(.*1x)"]
 url = "http://www.gstatic.com/generate_204"
-interval = 600
-timeout = 5
+interval = 300
 tolerance = 100
+timeout = 5
 lazy = true
 
 [[custom_groups]]
@@ -118,9 +118,9 @@ name = "🕊️ RELAY|US|TS"
 type = "url-test"
 rule = ["RE(.*US)(.*1x)"]
 url = "http://www.gstatic.com/generate_204"
-interval = 600
-timeout = 5
+interval = 300
 tolerance = 100
+timeout = 5
 lazy = true
 
 [[custom_groups]]
@@ -128,9 +128,9 @@ name = "🐱 RELAY|SG|TS"
 type = "url-test"
 rule = ["RE(.*SG)(.*1x)"]
 url = "http://www.gstatic.com/generate_204"
-interval = 600
-timeout = 5
+interval = 300
 tolerance = 100
+timeout = 5
 lazy = true
 
 [[custom_groups]]
@@ -138,9 +138,9 @@ name = "🎨 RELAY|TW|TS"
 type = "url-test"
 rule = ["RE(.*TW)(.*1x)"]
 url = "http://www.gstatic.com/generate_204"
-interval = 600
-timeout = 5
+interval = 300
 tolerance = 100
+timeout = 5
 lazy = true
 
 [[custom_groups]]

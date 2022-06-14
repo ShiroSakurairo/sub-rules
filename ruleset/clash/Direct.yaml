@@ -1,4 +1,6 @@
 payload:
+  - DOMAIN,clash.razord.top
+  - DOMAIN,yacd.haishan.me
   - DOMAIN-SUFFIX,prts.wiki
   - DOMAIN-SUFFIX,fastgit.org
   - DOMAIN-KEYWORD,douyucdn
@@ -9,3 +11,6 @@ payload:
   - DOMAIN-SUFFIX,exitgames.com
   - DOMAIN-SUFFIX,adinmo.com
   - DOMAIN-SUFFIX,playfabapi.com
+  #18comic
+  - DOMAIN-SUFFIX,jmcomic.asia
+  - DOMAIN-SUFFIX,jmcomic1.asia

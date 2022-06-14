@@ -1,12 +1,7 @@
 payload:
-  - DOMAIN-SUFFIX,manhuadb.com
-  - DOMAIN-SUFFIX,manhuaren.com
-  - DOMAIN-SUFFIX,manhuabei.com
+  #manhuagui
   - DOMAIN-SUFFIX,manhuagui.com
-  - DOMAIN-SUFFIX,cdndm5.com
-  - DOMAIN-SUFFIX,hamreus.com
-  - DOMAIN-SUFFIX,cdnmanhua.net
+  - DOMAIN-SUFFIX,i.hamreus.com
+  #copymanga
   - DOMAIN-KEYWORD,copymanga
   - DOMAIN-KEYWORD,mangafun
-  - DOMAIN-SUFFIX,jmcomic.asia
-  - DOMAIN-SUFFIX,jmcomic1.asia
