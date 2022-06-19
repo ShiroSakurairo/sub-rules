@@ -39,7 +39,7 @@ type = "select"
 rule = ["[]🍀 Proxy", "❄️ IPLC", "[]💜 RELAY", "[]🌸 JP|SC", "[]🌹 HK|SC", "[]🌙 SG|SC", "[]🐆 US|SC", "[]🎀 Direct"]
 
 [[custom_groups]]
-name = "☕ Streaming"
+name = "☕ GlobalMedia"
 type = "select"
 rule = ["[]🍀 Proxy", "❄️ IPLC", "[]💜 RELAY", "[]🌸 JP|SC", "[]🌹 HK|SC", "[]🌙 SG|SC", "[]🐆 US|SC", "[]🍮 Line"]
 
@@ -96,7 +96,7 @@ rule = ["[]🎨 RELAY|TW|TS", "(.*TW)"]
 [[custom_groups]]
 name = "🍥 RELAY|JP|TS"
 type = "url-test"
-rule = ["RE(.*JP.)(?!0[0-8])(.*1x)"]
+rule = ["RE(.*JP.)(.*1x)"]
 url = "http://www.gstatic.com/generate_204"
 interval = 300
 tolerance = 100
