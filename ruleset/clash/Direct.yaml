@@ -4,12 +4,9 @@ payload:
   - DOMAIN-SUFFIX,prts.wiki
   - DOMAIN-SUFFIX,fastgit.org
   #Virtual Droid
-  - IP-CIDR,92.38.154.0/24
+  #- IP-CIDR,92.38.154.5/32
+  #- IP-CIDR,92.38.154.22/32
   - DOMAIN-SUFFIX,ktplay.com
-  - DOMAIN-SUFFIX,photonengine.io
-  - DOMAIN-SUFFIX,exitgames.com
-  - DOMAIN-SUFFIX,adinmo.com
-  - DOMAIN-SUFFIX,playfabapi.com
   #18comic
   - DOMAIN-SUFFIX,jmcomic.asia
   - DOMAIN-SUFFIX,jmcomic1.asia
