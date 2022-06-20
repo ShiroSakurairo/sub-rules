@@ -1,8 +1,6 @@
 DOMAIN-SUFFIX,prts.wiki
 DOMAIN-SUFFIX,fastgit.org
 #Virtual Droid
-IP-CIDR,92.38.154.5/32
-IP-CIDR,92.38.154.22/32
 DOMAIN-SUFFIX,ktplay.coml
 #18comic
 DOMAIN-SUFFIX,jmcomic.asia
