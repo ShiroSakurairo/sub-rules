@@ -1,7 +1,8 @@
-- DOMAIN-SUFFIX,prts.wiki
-- DOMAIN-SUFFIX,fastgit.org
+DOMAIN-SUFFIX,prts.wiki
+DOMAIN-SUFFIX,fastgit.org
 #Virtual Droid
-- DOMAIN-SUFFIX,ktplay.com
+DOMAIN-SUFFIX,ktplay.com
+DOMAIN-SUFFIX,api.ktplay.com
 #18comic
-- DOMAIN-SUFFIX,jmcomic.asia
-- DOMAIN-SUFFIX,jmcomic.city
+DOMAIN-SUFFIX,jmcomic.asia
+DOMAIN-SUFFIX,jmcomic.city
