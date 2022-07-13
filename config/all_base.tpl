@@ -12,8 +12,8 @@ dns:
   default-nameserver:
     - 223.5.5.5
     - 119.29.29.29
-    - 8.8.4.4
-    - 1.0.0.1
+    - 8.8.8.8
+    - 1.1.1.1
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   use-hosts: true
@@ -22,10 +22,9 @@ dns:
   nameserver:
     - 223.5.5.5
     - 119.29.29.29
-    - dhcp://system
   fallback:
-    - 8.8.4.4
-    - 1.0.0.1
+    - tls://8.8.8.8:853
+    - https://1.1.1.1/dns-query
   fallback-filter:
     geoip: true
     geoip-code: CN
@@ -34,9 +33,10 @@ dns:
       - 127.0.0.0/8
       - 240.0.0.0/4
     domain:
-      - +.google.com
-      - +.facebook.com
-      - +.youtube.com
+      - '+.google.com'
+      - '+.facebook.com'
+      - '+.youtube.com'
+      - 'i0.hdslb.com'
 proxies:
 proxy-groups:
 rule-providers:
