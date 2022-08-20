@@ -1,6 +1,6 @@
-prts.wiki
-fastgit.org
-ghproxy.com
+DOMAIN-SUFFIX,prts.wiki
+DOMAIN-SUFFIX,fastgit.org
+DOMAIN-SUFFIX,ghproxy.com
 #18comic
-jmcomic.asia
-jmcomic.city
+DOMAIN-SUFFIX,jmcomic.asia
+DOMAIN-SUFFIX,jmcomic.city
