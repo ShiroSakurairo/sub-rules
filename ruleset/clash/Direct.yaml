@@ -1,11 +1,9 @@
 payload:
-  - DOMAIN,clash.razord.top
-  - DOMAIN,yacd.haishan.me
-  - DOMAIN-SUFFIX,prts.wiki
-  - DOMAIN-SUFFIX,fastgit.org
-  - DOMAIN-SUFFIX,ghproxy.com
-  #Virtual Droid
-  - DOMAIN-SUFFIX,ktplay.com
+  - 'clash.razord.top'
+  - 'yacd.haishan.me'
+  - 'prts.wiki'
+  - 'fastgit.org'
+  - 'ghproxy.com'
   #18comic
-  - DOMAIN-SUFFIX,jmcomic.asia
-  - DOMAIN-SUFFIX,jmcomic.city
+  - 'jmcomic.asia'
+  - 'jmcomic.city'
