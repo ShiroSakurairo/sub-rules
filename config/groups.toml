@@ -24,7 +24,7 @@ type = "select"
 rule = ["[]🍀 Proxy", "❄️ IPLC", "[]💜 Select", "[]🌸 JP|SC", "[]🌹 HK|SC", "[]🌙 SG|SC", "[]🐆 US|SC", "[]🍃 TW|SC", "[]🎀 Direct", "[]🍮 LINE"]
 
 [[custom_groups]]
-name = "🐈 Telegram"
+name = "🐱 Telegram"
 type = "select"
 rule = ["[]🍀 Proxy", "❄️ IPLC", "[]💜 Select", "[]🌸 JP|SC", "[]🌹 HK|SC", "[]🌙 SG|SC", "[]🐆 US|SC", "[]🍮 LINE"]
 
@@ -34,7 +34,7 @@ type = "select"
 rule = ["[]🍀 Proxy", "❄️ IPLC", "[]💜 Select", "[]🌸 JP|SC", "[]🌹 HK|SC", "[]🌙 SG|SC", "[]🐆 US|SC", "[]🍮 LINE"]
 
 [[custom_groups]]
-name = "💐 Game"
+name = "🧸 Game"
 type = "select"
 rule = ["[]🍀 Proxy", "❄️ IPLC", "[]💜 Select", "[]🌸 JP|SC", "[]🌹 HK|SC", "[]🌙 SG|SC", "[]🐆 US|SC", "[]🎀 Direct"]
 
@@ -86,7 +86,7 @@ rule = ["[]🕊️ RELAY|US|TS", "(.*US)"]
 [[custom_groups]]
 name = "🌙 SG|SC"
 type = "select"
-rule = ["[]🐱 RELAY|SG|TS", "(.*SG)"]
+rule = ["[]💐 RELAY|SG|TS", "(.*SG)"]
 
 [[custom_groups]]
 name = "🍃 TW|SC"
@@ -124,7 +124,7 @@ timeout = 5
 lazy = true
 
 [[custom_groups]]
-name = "🐱 RELAY|SG|TS"
+name = "💐 RELAY|SG|TS"
 type = "url-test"
 rule = ["RE(.*SG)(.*1x)"]
 url = "http://www.gstatic.com/generate_204"
