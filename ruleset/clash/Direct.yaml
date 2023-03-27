@@ -1,9 +1,10 @@
 payload:
   - DOMAIN,clash.razord.top
   - DOMAIN,yacd.haishan.me
-  - DOMAIN-SUFFIX,prts.wiki
   - DOMAIN-SUFFIX,fastgit.org
   - DOMAIN-SUFFIX,ghproxy.com
+  - DOMAIN-SUFFIX,ghps.cc
+  - DOMAIN,cdn.jsdelivr.net
   #18comic
   - DOMAIN-SUFFIX,jmcomic.asia
   - DOMAIN-SUFFIX,jmcomic.city
