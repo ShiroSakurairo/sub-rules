@@ -1,7 +1,7 @@
 DOMAIN-SUFFIX,ghproxy.com
 DOMAIN-SUFFIX,ghproxy.net
 DOMAIN-SUFFIX,jsdelivr.net
-DOMAIN-SUFFIX,raw.kgithub.com
+DOMAIN,kgithub.com
 DOMAIN-SUFFIX,prts.wiki
 #18comic
 DOMAIN-SUFFIX,jmcomic.asia
