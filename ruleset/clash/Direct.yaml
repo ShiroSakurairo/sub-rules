@@ -4,6 +4,7 @@ payload:
   - DOMAIN-SUFFIX,jsdelivr.net
   - DOMAIN-SUFFIX,prts.wiki
   - DOMAIN-SUFFIX,ghps.cc
+  - DOMAIN-SUFFIX,kkgithub.com
   #18comic
   - DOMAIN-SUFFIX,jmcomic.asia
   - DOMAIN-SUFFIX,jmcomic.city
