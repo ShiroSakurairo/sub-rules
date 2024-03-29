@@ -2,10 +2,10 @@ payload:
   #scam
   - DOMAIN-SUFFIX,haitenjp.com
   - DOMAIN-SUFFIX,cgpacking.com
-  - DOMAIN-SUFFIX,mnaspm.com
-  - DOMAIN-SUFFIX,bncloudfl.com
-  - DOMAIN-SUFFIX,tsyndicate.com
+  #AD
   - DOMAIN-SUFFIX,uejntsxdffp.com
+  - DOMAIN-SUFFIX,tsyndicate.com
+  - DOMAIN-SUFFIX,mnaspm.com
   #falun
   - DOMAIN-SUFFIX,dafahao.org
   - DOMAIN-SUFFIX,minghui.org
