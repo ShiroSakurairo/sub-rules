@@ -3,9 +3,10 @@ payload:
   - DOMAIN-SUFFIX,haitenjp.com
   - DOMAIN-SUFFIX,cgpacking.com
   #AD
-  - DOMAIN-SUFFIX,uejntsxdffp.com
   - DOMAIN-SUFFIX,tsyndicate.com
+  - DOMAIN-SUFFIX,uejntsxdffp.com
   - DOMAIN-SUFFIX,mnaspm.com
+  - DOMAIN-SUFFIX,magsrv.com
   #falun
   - DOMAIN-SUFFIX,dafahao.org
   - DOMAIN-SUFFIX,minghui.org
