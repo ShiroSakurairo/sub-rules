@@ -1,0 +1,8 @@
+payload:
+  - DOMAIN-SUFFIX,ghproxy.com
+  - DOMAIN-SUFFIX,kkgithub.com
+  - DOMAIN-SUFFIX,prts.wiki
+  - DOMAIN-KEYWORD,jsdelivr
+  #18comic
+  - DOMAIN-SUFFIX,jmcomic.asia
+  - DOMAIN-SUFFIX,jmcomic.city
