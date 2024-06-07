@@ -1,2 +1,3 @@
 payload:
-  - DOMAIN-KEYWORD,chatgpt
+  - DOMAIN-SUFFIX,chatgpt-async-webps-prod-eastus-0.webpubsub.azure.com
+  - DOMAIN-SUFFIX,chatgpt-async-webps-prod-westus-0.webpubsub.azure.com
