@@ -14,6 +14,7 @@ payload:
   #scam
   - DOMAIN-SUFFIX,haitenjp.com
   - DOMAIN-SUFFIX,cgpacking.com
+  - DOMAIN-SUFFIX,hentaicovid.com
   #falun
   - DOMAIN-SUFFIX,dafahao.org
   - DOMAIN-SUFFIX,minghui.org
